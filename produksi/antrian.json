@@ -1,0 +1,170 @@
+[
+  {
+    "paket": 1,
+    "kisah": "sulaiman",
+    "judul": "Nabi Sulaiman & Semut",
+    "status": "siap_rilis",
+    "catatan": "Sudah diproduksi & video panjang di-approve 31 Okt 2026; Shorts versi pembuka/penutup VO perlu approve.",
+    "tayang": {
+      "long": "2026-10-31T16:30+07:00",
+      "short1": "2026-11-02T16:30+07:00",
+      "short2": "2026-11-05T16:30+07:00"
+    },
+    "shorts": [
+      "Short-sulaiman-1-semut-peduli",
+      "Short-sulaiman-2-doa"
+    ],
+    "youtube": {},
+    "instagram": {}
+  },
+  {
+    "paket": 2,
+    "kisah": "yunus",
+    "judul": "Nabi Yunus & Ikan Besar",
+    "status": "naskah_ada",
+    "catatan": "Naskah sudah ada (src/stories/yunus.ts); perlu adegan tambahan (shots) tanpa kamera, VO, Shorts.",
+    "tayang": {
+      "long": "2026-11-07T16:30+07:00",
+      "short1": "2026-11-09T16:30+07:00",
+      "short2": "2026-11-12T16:30+07:00"
+    },
+    "shorts": [],
+    "youtube": {},
+    "instagram": {}
+  },
+  {
+    "paket": 3,
+    "kisah": "nuh",
+    "judul": "Nabi Nuh & Kapal Besar",
+    "status": "antri",
+    "catatan": "QS. Hud: 25–49, QS. Nuh",
+    "tayang": {
+      "long": "2026-11-14T16:30+07:00",
+      "short1": "2026-11-16T16:30+07:00",
+      "short2": "2026-11-19T16:30+07:00"
+    },
+    "shorts": [],
+    "youtube": {},
+    "instagram": {}
+  },
+  {
+    "paket": 4,
+    "kisah": "ibrahim-api",
+    "judul": "Nabi Ibrahim & Api yang Dingin",
+    "status": "antri",
+    "catatan": "QS. Al-Anbiya: 51–70",
+    "tayang": {
+      "long": "2026-11-21T16:30+07:00",
+      "short1": "2026-11-23T16:30+07:00",
+      "short2": "2026-11-26T16:30+07:00"
+    },
+    "shorts": [],
+    "youtube": {},
+    "instagram": {}
+  },
+  {
+    "paket": 5,
+    "kisah": "ibrahim-ismail",
+    "judul": "Nabi Ibrahim, Ismail & Ketaatan",
+    "status": "antri",
+    "catatan": "QS. As-Saffat: 99–111",
+    "tayang": {
+      "long": "2026-11-28T16:30+07:00",
+      "short1": "2026-11-30T16:30+07:00",
+      "short2": "2026-12-03T16:30+07:00"
+    },
+    "shorts": [],
+    "youtube": {},
+    "instagram": {}
+  },
+  {
+    "paket": 6,
+    "kisah": "musa-laut",
+    "judul": "Nabi Musa & Laut yang Terbelah",
+    "status": "antri",
+    "catatan": "QS. Asy-Syu'ara: 52–68",
+    "tayang": {
+      "long": "2026-12-05T16:30+07:00",
+      "short1": "2026-12-07T16:30+07:00",
+      "short2": "2026-12-10T16:30+07:00"
+    },
+    "shorts": [],
+    "youtube": {},
+    "instagram": {}
+  },
+  {
+    "paket": 7,
+    "kisah": "musa-khidir",
+    "judul": "Nabi Musa & Nabi Khidir",
+    "status": "antri",
+    "catatan": "QS. Al-Kahfi: 60–82, HR. Bukhari & Muslim",
+    "tayang": {
+      "long": "2026-12-12T16:30+07:00",
+      "short1": "2026-12-14T16:30+07:00",
+      "short2": "2026-12-17T16:30+07:00"
+    },
+    "shorts": [],
+    "youtube": {},
+    "instagram": {}
+  },
+  {
+    "paket": 8,
+    "kisah": "yusuf",
+    "judul": "Nabi Yusuf & Mimpi yang Indah",
+    "status": "antri",
+    "catatan": "QS. Yusuf",
+    "tayang": {
+      "long": "2026-12-19T16:30+07:00",
+      "short1": "2026-12-21T16:30+07:00",
+      "short2": "2026-12-24T16:30+07:00"
+    },
+    "shorts": [],
+    "youtube": {},
+    "instagram": {}
+  },
+  {
+    "paket": 9,
+    "kisah": "ayyub",
+    "judul": "Nabi Ayyub yang Sangat Sabar",
+    "status": "antri",
+    "catatan": "QS. Al-Anbiya: 83–84, Shad: 41–44",
+    "tayang": {
+      "long": "2026-12-26T16:30+07:00",
+      "short1": "2026-12-28T16:30+07:00",
+      "short2": "2026-12-31T16:30+07:00"
+    },
+    "shorts": [],
+    "youtube": {},
+    "instagram": {}
+  },
+  {
+    "paket": 10,
+    "kisah": "sulaiman-hudhud",
+    "judul": "Nabi Sulaiman & Burung Hud-hud",
+    "status": "antri",
+    "catatan": "QS. An-Naml: 20–44",
+    "tayang": {
+      "long": "2027-01-02T16:30+07:00",
+      "short1": "2027-01-04T16:30+07:00",
+      "short2": "2027-01-07T16:30+07:00"
+    },
+    "shorts": [],
+    "youtube": {},
+    "instagram": {}
+  },
+  {
+    "paket": 11,
+    "kisah": "dawud",
+    "judul": "Nabi Dawud & Jalut",
+    "status": "antri",
+    "catatan": "QS. Al-Baqarah: 249–251",
+    "tayang": {
+      "long": "2027-01-09T16:30+07:00",
+      "short1": "2027-01-11T16:30+07:00",
+      "short2": "2027-01-14T16:30+07:00"
+    },
+    "shorts": [],
+    "youtube": {},
+    "instagram": {}
+  }
+]

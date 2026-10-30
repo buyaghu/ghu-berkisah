@@ -1,0 +1,13 @@
+node_modules
+dist
+build
+.DS_Store
+.env
+
+# Hasil render video
+out
+
+# Rekaman suara Ghu & video disimpan di repo PRIVAT buyaghu/claude-proyek (privasi anak).
+# Ambil dengan: npm run vo:ambil
+public/voiceover/
+rilis/
