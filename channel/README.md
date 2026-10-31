@@ -98,17 +98,17 @@ npx remotion still Channel-FotoProfil channel/foto-profil.png
 
 ## 9. Profil Instagram @buyaaghu
 
-Akun ini juga dipakai untuk komik parenting "Buya & Ghu", jadi bio menggabungkan keduanya.
+Akun ini juga dipakai untuk komik parenting harian "Buya & Ghu"; bio menggabungkan keduanya.
 Instagram tidak mengizinkan bio diubah lewat API, jadi diganti manual lewat **Edit profil**.
 
-- **Nama** (maks. 30 karakter): `Buya & Ghu | Parenting & Kisah`
-- **Bio** (146/150 karakter):
+- **Nama**: tetap `Buya & Ghu | Komik Parenting`.
+- **Bio** (145/150 karakter):
 
   ```
-  Ayah yang lagi belajar sabar & anak yang hobi nanya aneh 😅
-  ✏️ Komik parenting islami
+  Komik parenting islami & kisah nabi untuk anak 🤍
+  ✏️ Komik baru tiap hari
   📖 Kisah nabi bareng Ghu tiap pekan
-  ▶️ YouTube: Ghu Berkisah
+  ▶️ IG resmi YouTube Ghu Berkisah 👇
   ```
-- **Tautan**: link channel YouTube Ghu Berkisah (`youtube.com/@<handle>`).
+- **Tautan**: link channel YouTube Ghu Berkisah (wajib, karena 👇 menunjuk ke sini dan caption Reels menulis "link di bio").
 - **Sorotan (highlight)** baru: **Kisah Nabi**, isinya Reels kisah nabi; sampul dari `channel/foto-profil.png`.
