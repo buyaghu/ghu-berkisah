@@ -3,15 +3,15 @@
 Dibaca oleh sesi terjadwal Claude Code. Semua waktu dalam **WIB (UTC+7)**.
 Pedoman wajib (syariat, sumber shahih, gaya visual, privasi) ada di `CLAUDE.md` — baca dulu.
 
-Jadwal tugas (scheduled tasks) Claude Code: produksi Sabtu 09.00, posting Sabtu/Senin/Kamis mulai 16.25
-(agar tayang ±16.30). Setiap tugas butuh konektor **Composio** dan **ElevenLabs** di pengaturan tugasnya.
+Jadwal tugas (scheduled tasks) Claude Code: produksi Sabtu 09.00, posting Sabtu 16.25, Minggu 08.55, Rabu 15.55
+(agar tayang ±16.30 / ±09.00 / ±16.00). Setiap tugas butuh konektor **Composio** dan **ElevenLabs** di pengaturan tugasnya.
 
 | Kapan | Sesi | Hasil |
 | --- | --- | --- |
 | Sabtu 09.00 | **Produksi** | Paket **berikutnya** (tayang Sabtu depan): 1 video panjang + 2 Shorts/Reels, diunggah *private*, laporan & minta approve |
 | Sabtu 16.30 | **Posting 1** | Video panjang tayang di YouTube (jika sudah approved) |
-| Senin 16.30 | **Posting 2** | Shorts 1 tayang di YouTube Shorts + Instagram Reels @buyaaghu |
-| Kamis 16.30 | **Posting 3** | Shorts 2 tayang di YouTube Shorts + Instagram Reels @buyaaghu |
+| Minggu 09.00 | **Posting 2** | Shorts 1 tayang di YouTube Shorts + Instagram Reels @buyaaghu |
+| Rabu 16.00 | **Posting 3** | Shorts 2 tayang di YouTube Shorts + Instagram Reels @buyaaghu |
 
 Antrian episode & status ada di `produksi/antrian.json` (repo publik). Status:
 `antri` → `naskah_ada` → `siap_rilis` → `menunggu_approve` → `approved` → `tayang_long` → `tayang_short1` → `selesai`.
@@ -36,7 +36,7 @@ VO baru: simpan di `public/voiceover/` repo privat (commit & push di sana), lalu
 - **Sesi produksi** mengerjakan **paket pertama di antrian yang belum diproduksi** (status `antri` atau `naskah_ada`).
   Paket itu tayang sesuai tanggal di antrian, biasanya **Sabtu depan**, sehingga ada waktu seminggu untuk approve.
 - **Sesi posting** memposting paket yang `tayang.long`-nya jatuh pada **Sabtu minggu ini**
-  (untuk posting Senin/Kamis: Sabtu terakhir sebelum hari ini).
+  (untuk posting Shorts: paket yang `tayang.short1` / `tayang.short2`-nya jatuh **hari ini**).
 
 Akun:
 - YouTube: channel **Ghu Berkisah** di Composio (`youtube`); Instagram: **@buyaaghu** di Composio (`instagram`).
@@ -87,11 +87,15 @@ Akun:
 2. **Jika status belum `approved` (atau setelahnya): JANGAN posting.** Laporkan ke Kakak bahwa posting ditunda
    karena belum di-approve, dan apa yang perlu dilakukan.
 3. **Sabtu (long)**: `YOUTUBE_UPDATE_VIDEO` `privacy_status: "public"` untuk `youtube.long`. Status → `tayang_long`.
-4. **Senin (short1) / Kamis (short2)**:
+4. **Minggu (short1) / Rabu (short2)**:
    - YouTube: `YOUTUBE_UPDATE_VIDEO` `privacy_status: "public"` untuk `youtube.short1` / `short2`.
-   - Instagram Reels @buyaaghu: ambil `rilis/<tgl>/short-1.mp4` (atau `short-2.mp4`) dari GitHub ke workbench
-     seperti langkah 1.8 → `upload_local_file` → `INSTAGRAM_POST_IG_USER_MEDIA` (Reels, caption dari
-     `naskah/<kisah>-shorts.md`) → tunggu proses → `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH`. Cek skema tool dulu.
+   - Instagram Reels @buyaaghu (akun Composio `instagram_facade-arhar`; cek dulu username `buyaaghu` dengan
+     INSTAGRAM_GET_USER_INFO, kalau bukan, berhenti). Cek 5 media terakhir agar tidak posting ganda.
+     Ambil `rilis/<tgl>/short-1.mp4` (atau `short-2.mp4`) dari repo privat ke workbench seperti langkah 1.8 →
+     `upload_local_file` → `INSTAGRAM_POST_IG_USER_MEDIA` dengan `media_type: "REELS"`,
+     `video_file: {name, mimetype: "video/mp4", s3key}`, `share_to_feed: true`, `thumb_offset: 2000`
+     (frame judul), caption apa adanya dari `naskah/<kisah>-shorts.md` (jangan ubah `#` jadi `%23`) →
+     `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH` (`max_wait_seconds: 300`). Simpan permalink.
    - Simpan id di `antrian.json`, status → `tayang_short1` / `selesai`. Commit & push.
 5. Laporan singkat ke Kakak: link video yang tayang, atau kendala yang terjadi.
 
