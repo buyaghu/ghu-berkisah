@@ -95,3 +95,20 @@ Untuk mengganti nama atau tagline di banner, buka composition **Channel-Banner**
 npx remotion still Channel-Banner channel/banner.png
 npx remotion still Channel-FotoProfil channel/foto-profil.png
 ```
+
+## 9. Profil Instagram @buyaaghu
+
+Akun ini juga dipakai untuk komik parenting "Buya & Ghu", jadi bio menggabungkan keduanya.
+Instagram tidak mengizinkan bio diubah lewat API, jadi diganti manual lewat **Edit profil**.
+
+- **Nama** (maks. 30 karakter): `Buya & Ghu | Parenting & Kisah`
+- **Bio** (146/150 karakter):
+
+  ```
+  Ayah yang lagi belajar sabar & anak yang hobi nanya aneh 😅
+  ✏️ Komik parenting islami
+  📖 Kisah nabi bareng Ghu tiap pekan
+  ▶️ YouTube: Ghu Berkisah
+  ```
+- **Tautan**: link channel YouTube Ghu Berkisah (`youtube.com/@<handle>`).
+- **Sorotan (highlight)** baru: **Kisah Nabi**, isinya Reels kisah nabi; sampul dari `channel/foto-profil.png`.
