@@ -64,10 +64,13 @@ Akun:
    Video panjang harus **< 95 MB** (batas GitHub); jika lebih, encode ulang
    `-c:v libx264 -crf 24 -preset slow`.
 7. **Paket rilis**: salin ke `rilis/<tanggal-sabtu>/long.mp4`, `short-1.mp4`, `short-2.mp4` di **repo privat**
-   `claude-proyek`, commit & push di sana (repo privat menjadi tempat transfer file ke Composio).
+   `claude-proyek`. File > 25 MB dipecah dulu agar workbench tidak kehabisan memori:
+   `split -b 20000000 -d -a 1 long.mp4 parts/long.mp4.part` (simpan `sha256sum`). Tulis juga
+   `rilis/<tgl>/youtube-meta.json` (`{long|short1|short2: {title, description, tags}}`). Commit & push di sana.
 8. **Upload YouTube (private)** lewat `COMPOSIO_REMOTE_WORKBENCH`:
-   - unduh file dari GitHub: `proxy_execute("GET", "/repos/buyaghu/claude-proyek/contents/rilis/<tgl>/long.mp4?ref=claude/youtube-nabi-stories-animation-k5hzrv", "github")`
-     untuk mendapatkan `sha`, lalu blob `GET /repos/buyaghu/claude-proyek/git/blobs/<sha>` (base64) → simpan di `/mnt/files/rilis/<tgl>/`;
+   - unduh tiap pecahan dari GitHub: `git ls-tree` memberi `sha` blob, lalu satu sel per 1–2 pecahan:
+     `proxy_execute("GET", "/repos/buyaghu/claude-proyek/git/blobs/<sha>", "github")` → base64 decode → tambahkan
+     (append) ke `/home/user/rilis/<tgl>/long.mp4` (bukan `/mnt/files`), `del` + `gc.collect()`; cocokkan sha256;
    - `upload_local_file(path)` → `s3key`;
    - `YOUTUBE_MULTIPART_UPLOAD_VIDEO` (`privacyStatus: "private"`, `categoryId: "27"`, judul/deskripsi/tag dari naskah);
    - set "dibuat untuk anak": `proxy_execute("PUT", "/youtube/v3/videos?part=status", "youtube", body={"id": ..., "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": true}})`.
@@ -98,3 +101,6 @@ Akun:
 - Tidak pernah mengunggah video atau suara Ghu ke layanan publik pihak ketiga maupun repo publik;
   transfer file hanya lewat repo privat `claude-proyek`.
 - Jika ada keraguan dalil/isi, berhenti dan tanyakan ke Kakak.
+- Jika YouTube menjawab `quotaExceeded` / `Video Uploads per day` (kuota harian aplikasi Composio bersama, reset
+  ±14.00 WIB), jangan mengulang terus: simpan `s3key` di `/home/user/rilis/<tgl>/s3.json`, laporkan ke Kakak,
+  dan jadwalkan percobaan ulang (`send_later`) sekitar 14.05 WIB.
