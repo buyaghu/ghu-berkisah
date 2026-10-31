@@ -8,7 +8,7 @@ Jadwal tugas (scheduled tasks) Claude Code: produksi Sabtu 09.00, posting Sabtu/
 
 | Kapan | Sesi | Hasil |
 | --- | --- | --- |
-| Sabtu 09.00 | **Produksi** | 1 video panjang + 2 Shorts/Reels, diunggah *private* ke YouTube, laporan & minta approve |
+| Sabtu 09.00 | **Produksi** | Paket **berikutnya** (tayang Sabtu depan): 1 video panjang + 2 Shorts/Reels, diunggah *private*, laporan & minta approve |
 | Sabtu 16.30 | **Posting 1** | Video panjang tayang di YouTube (jika sudah approved) |
 | Senin 16.30 | **Posting 2** | Shorts 1 tayang di YouTube Shorts + Instagram Reels @buyaaghu |
 | Kamis 16.30 | **Posting 3** | Shorts 2 tayang di YouTube Shorts + Instagram Reels @buyaaghu |
@@ -33,8 +33,10 @@ cd ghu-berkisah && npm ci && npm run vo:ambil   # salin VO dari repo privat
 
 VO baru: simpan di `public/voiceover/` repo privat (commit & push di sana), lalu `npm run vo:ambil`.
 
-Paket minggu ini = entri `antrian.json` yang `tayang.long`-nya jatuh pada **Sabtu minggu ini**
-(untuk posting Senin/Kamis: Sabtu terakhir sebelum hari ini).
+- **Sesi produksi** mengerjakan **paket pertama di antrian yang belum diproduksi** (status `antri` atau `naskah_ada`).
+  Paket itu tayang sesuai tanggal di antrian, biasanya **Sabtu depan**, sehingga ada waktu seminggu untuk approve.
+- **Sesi posting** memposting paket yang `tayang.long`-nya jatuh pada **Sabtu minggu ini**
+  (untuk posting Senin/Kamis: Sabtu terakhir sebelum hari ini).
 
 Akun:
 - YouTube: channel **Ghu Berkisah** di Composio (`youtube`); Instagram: **@buyaaghu** di Composio (`instagram`).
@@ -44,7 +46,7 @@ Akun:
 
 ## 1. Sesi Produksi (Sabtu 09.00)
 
-1. Jika status paket `siap_rilis` (sudah diproduksi), lompat ke langkah 6.
+1. Pilih paket pertama berstatus `antri`/`naskah_ada`. Jika tidak ada (semua sudah diproduksi), laporkan dan selesai.
 2. **Naskah** (`src/stories/<kisah>.ts`) bila belum ada: ikuti `CLAUDE.md` (hanya Al-Qur'an & hadits shahih,
    `sumber` tiap scene, `sources`, pembuka baku `pembuka()`, hikmah, doa jika ada, tebak-tebakan, penutup).
    Durasi 5–8 menit (±650–750 kata). **Tidak menggambar nabi/rasul, sahabat, malaikat, manusia, jin.**
@@ -73,7 +75,7 @@ Akun:
 9. Set status `menunggu_approve`, commit & push.
 10. **Laporan ke Kakak** (bahasa Indonesia): link YouTube Studio ketiga video private, ringkasan naskah & daftar
     dalil, durasi, kredit ElevenLabs terpakai, dan hal yang perlu dicek (mis. pelafalan Arab).
-    Minta balasan **"approved"** di sesi ini sebelum 16.30. Saat Kakak membalas "approved": ubah status ke
+    Minta balasan **"approved"** di sesi ini sebelum tanggal tayangnya. Saat Kakak membalas "approved": ubah status ke
     `approved`, commit & push. Jika ada revisi: perbaiki, render & upload ulang (hapus/ganti video lama), lapor lagi.
 
 ## 2. Sesi Posting
