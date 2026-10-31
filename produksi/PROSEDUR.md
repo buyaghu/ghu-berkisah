@@ -73,7 +73,8 @@ Akun:
      (append) ke `/home/user/rilis/<tgl>/long.mp4` (bukan `/mnt/files`), `del` + `gc.collect()`; cocokkan sha256;
    - `upload_local_file(path)` → `s3key`;
    - `YOUTUBE_MULTIPART_UPLOAD_VIDEO` (`privacyStatus: "private"`, `categoryId: "27"`, judul/deskripsi/tag dari naskah);
-   - set "dibuat untuk anak": `proxy_execute("PUT", "/youtube/v3/videos?part=status", "youtube", body={"id": ..., "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": true}})`.
+   - set "dibuat untuk anak": `proxy_execute("PUT", "/videos", "youtube", query_params={"part": "status"}, body={"id": ..., "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": true, "embeddable": true, "publicStatsViewable": true, "license": "youtube"}})`
+     (endpoint relatif tanpa `/youtube/v3`; sertakan semua kolom status karena PUT menimpa nilai lama`.
    Lakukan untuk long + short-1 + short-2. Simpan videoId di `antrian.json` (`youtube.long/short1/short2`).
 9. Set status `menunggu_approve`, commit & push.
 10. **Laporan ke Kakak** (bahasa Indonesia): link YouTube Studio ketiga video private, ringkasan naskah & daftar
