@@ -37,7 +37,7 @@ cd ghu-berkisah && npm ci && npm run vo:ambil   # salin VO dari repo privat
 VO baru: simpan di `public/voiceover/` repo privat (commit & push di sana), lalu `npm run vo:ambil`.
 
 - **Sesi produksi** mengerjakan **paket pertama di antrian yang belum diproduksi** (status `antri` atau `naskah_ada`).
-  Paket itu tayang sesuai tanggal di antrian, biasanya **Sabtu depan**, sehingga ada waktu seminggu untuk approve.
+  Paket itu tayang sesuai tanggal di antrian, biasanya **Sabtu depan**, tanpa langkah approval.
 - **Sesi posting** memposting paket yang `tayang.long`-nya jatuh pada **Sabtu minggu ini**
   (untuk posting Shorts: paket yang `tayang.short1` / `tayang.short2`-nya jatuh **hari ini**).
 
