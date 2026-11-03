@@ -5,12 +5,12 @@ import { Clouds, Moon, Sea, Stars, Sun, calmSea } from "../components/nature";
 import { usePhraseFrame } from "../lib/voice";
 import { clamp, type SceneProps } from "./common";
 
-// Negeri Ninawa di tepi sungai. Saat Nabi Yunus "terus mengajak", siang-malam berganti cepat.
+// Negeri Ninawa di tepi sungai. Saat Nabi Yunus "mengajak", siang-malam berganti cepat.
 export const CityScene: React.FC<SceneProps> = () => {
   const frame = useCurrentFrame();
   const { durationInFrames, width } = useVideoConfig();
   const rejectAt = usePhraseFrame("Tapi mereka tidak mau");
-  const yearsAt = usePhraseFrame("terus mengajak");
+  const yearsAt = usePhraseFrame("Nabi Yunus mengajak");
 
   // Siklus hari: 0 = siang, 1 = malam
   const cycles = interpolate(frame, [yearsAt, durationInFrames], [0, 4], clamp);

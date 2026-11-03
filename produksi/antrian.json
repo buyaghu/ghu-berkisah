@@ -32,14 +32,17 @@
     "paket": 2,
     "kisah": "yunus",
     "judul": "Nabi Yunus & Ikan Besar",
-    "status": "naskah_ada",
-    "catatan": "Naskah sudah ada (src/stories/yunus.ts); perlu adegan tambahan (shots) tanpa kamera, VO, Shorts.",
+    "status": "siap_rilis",
+    "catatan": "Diproduksi 3 Nov 2026 (jalan manual). Video 06:15 + 2 Shorts (83 dtk & 102 dtk) sudah dirender & disimpan di repo privat rilis/2026-11-07/. Unggah PRIVATE ke YouTube tertunda: quotaExceeded (Video Uploads per day, reset ±15.00 WIB 4 Nov). Perlu diunggah ulang lalu status -> menunggu_approve.",
     "tayang": {
       "long": "2026-11-07T16:30+07:00",
       "short1": "2026-11-08T09:00+07:00",
       "short2": "2026-11-11T16:00+07:00"
     },
-    "shorts": [],
+    "shorts": [
+      "Short-yunus-1-kegelapan",
+      "Short-yunus-2-doa"
+    ],
     "youtube": {},
     "instagram": {}
   },

@@ -50,11 +50,10 @@ export const yunus: Story = {
       label: "Negeri Ninawa",
       sumber: "QS. As-Saffat: 139",
       text:
-        "Dahulu kala, ada sebuah negeri bernama Ninawa, di tepi sungai yang besar. " +
-        "Penduduknya sangat banyak. Rumah-rumahnya besar, dan kotanya ramai sekali. " +
-        "Allah mengutus Nabi Yunus kepada mereka, untuk mengajak mereka beriman dan menyembah Allah saja. " +
-        "Tapi mereka tidak mau mendengar. Mereka menolak ajakan Nabi Yunus. " +
-        "Nabi Yunus terus mengajak mereka, tapi mereka tetap tidak mau beriman.",
+        "Dahulu kala, Allah mengutus Nabi Yunus kepada sebuah kaum yang jumlahnya sangat banyak. " +
+        "Para ulama tafsir menjelaskan, negeri mereka bernama Ninawa. " +
+        "Nabi Yunus mengajak mereka beriman dan menyembah Allah saja. " +
+        "Tapi mereka tidak mau mendengar. Mereka menolak ajakan Nabi Yunus.",
       sfx: [
         { sound: "angin", at: 0, volume: 0.25, loop: true },
         { sound: "burung", at: 0.5, volume: 0.3 },
@@ -66,12 +65,11 @@ export const yunus: Story = {
       label: "Meninggalkan Ninawa",
       sumber: "QS. Al-Anbiya: 87 · As-Saffat: 140",
       text:
-        "Nabi Yunus merasa sedih dan kecewa. Beliau pun marah kepada kaumnya. " +
-        "Akhirnya, Nabi Yunus pergi meninggalkan negeri Ninawa. " +
-        "Padahal, Allah belum mengizinkan beliau untuk pergi. " +
-        "Nabi Yunus berjalan jauh, terus berjalan, sampai tiba di tepi laut.",
+        "Al-Qur'an menceritakan, Nabi Yunus pergi dalam keadaan marah. " +
+        "Beliau meninggalkan kaumnya. Para ulama tafsir menjelaskan, saat itu Allah belum mengizinkan beliau untuk pergi. " +
+        "Nabi Yunus pun terus pergi, sampai tiba di tepi laut.",
       sfx: [
-        { sound: "langkah", at: { phrase: "berjalan jauh" }, volume: 0.5 },
+        { sound: "langkah", at: { phrase: "terus pergi" }, volume: 0.5 },
         { sound: "ombak", at: { phrase: "tepi laut" }, volume: 0.4 },
       ],
     },
@@ -82,12 +80,11 @@ export const yunus: Story = {
       sumber: "QS. As-Saffat: 140",
       text:
         "Di sana, ada sebuah kapal yang penuh dengan muatan. " +
-        "Nabi Yunus pun ikut naik ke kapal itu. " +
-        "Kapal mulai berlayar. Lautnya luas sekali, angin bertiup sepoi-sepoi, " +
-        "dan burung camar terbang di atas kapal.",
+        "Nabi Yunus pun naik ke kapal itu. " +
+        "Kapal mulai berlayar di atas laut yang luas sekali.",
       sfx: [
         { sound: "ombak", at: 0, volume: 0.35, loop: true },
-        { sound: "camar", at: { phrase: "burung camar" }, volume: 0.5 },
+        { sound: "camar", at: { phrase: "laut yang luas" }, volume: 0.4 },
       ],
     },
     {
@@ -111,11 +108,10 @@ export const yunus: Story = {
       sumber: "QS. As-Saffat: 141",
       text:
         "Para penumpang lalu mengadakan undian, untuk menentukan siapa yang harus turun dari kapal. " +
-        "Undian pun dilakukan, dan yang keluar adalah nama Nabi Yunus. " +
-        "Nabi Yunus pun sadar, ini adalah ketetapan dari Allah.",
+        "Nabi Yunus ikut dalam undian itu, dan ternyata, beliaulah yang kalah dalam undian.",
       sfx: [
         { sound: "badai", at: 0, volume: 0.2, loop: true },
-        { sound: "pop", at: { phrase: "nama Nabi Yunus" }, volume: 0.7 },
+        { sound: "pop", at: { phrase: "ternyata" }, volume: 0.7 },
       ],
     },
     {
@@ -146,7 +142,7 @@ export const yunus: Story = {
         "Gelapnya malam. Gelapnya dasar laut. Dan gelapnya perut ikan. " +
         "Sunyi sekali. Tidak ada seorang pun yang bisa menolong. " +
         "Tapi Nabi Yunus tahu, masih ada Allah yang Maha Mendengar. " +
-        "Nabi Yunus menyesali kesalahannya, lalu beliau berdoa dengan sepenuh hati.",
+        "Lalu, Nabi Yunus berdoa dengan sepenuh hati.",
       sfx: [
         { sound: "bawah-air", at: 0, volume: 0.3, loop: true },
         { sound: "dung", at: { phrase: "Gelapnya malam" }, volume: 0.6 },
@@ -185,10 +181,11 @@ export const yunus: Story = {
       text:
         "Dengan izin Allah, ikan besar itu mengeluarkan Nabi Yunus ke daratan. " +
         "Nabi Yunus terdampar di pantai, dalam keadaan sakit dan sangat lemah. " +
-        "Lalu, Allah menumbuhkan sebatang pohon labu di dekatnya. " +
-        "Daunnya yang lebar menaungi beliau. " +
+        "Lalu, Allah menumbuhkan sebatang pohon di dekatnya. " +
+        "Para ulama tafsir menjelaskan, itu adalah pohon labu, yang daunnya lebar dan menaungi beliau. " +
         "Sedikit demi sedikit, Nabi Yunus pun sehat kembali. Masya Allah! " +
         "Begitulah Allah menyelamatkan orang-orang yang beriman.",
+      shots: [{ phrase: "Begitulah Allah menyelamatkan", visual: "garden" }],
       sfx: [
         { sound: "ombak", at: 0, volume: 0.35, loop: true },
         { sound: "splash", at: 0.3, volume: 0.4 },
@@ -208,6 +205,7 @@ export const yunus: Story = {
         "Maka Allah menghilangkan azab dari mereka, dan memberi mereka kenikmatan hidup. " +
         "Nabi Yunus diutus kepada seratus ribu orang, atau lebih, dan mereka semua beriman kepada Allah. " +
         "Alhamdulillah!",
+      shots: [{ phrase: "Alhamdulillah", visual: "garden" }],
       sfx: [
         { sound: "angin", at: 0, volume: 0.25 },
         { sound: "sparkle", at: { phrase: "Allah menghilangkan azab" }, volume: 0.6 },
@@ -247,7 +245,7 @@ export const yunus: Story = {
         "Apakah pohon kurma, pohon labu, atau pohon zaitun? " +
         "Coba tebak dulu, teman-teman... " +
         "Jawabannya adalah, pohon labu! Hebat! " +
-        "Allah menumbuhkan pohon labu, sehingga Nabi Yunus bisa beristirahat sampai sehat kembali.",
+        "Menurut para ulama tafsir, Allah menumbuhkan pohon labu, sehingga Nabi Yunus bisa beristirahat sampai sehat kembali.",
       quiz: {
         question: "Pohon apa yang Allah tumbuhkan?",
         options: ["kurma", "labu", "zaitun"],

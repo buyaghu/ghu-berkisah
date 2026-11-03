@@ -9,7 +9,7 @@ import { clamp, type SceneProps } from "./common";
 export const ShoreScene: React.FC<SceneProps> = () => {
   const frame = useCurrentFrame();
   const growAt = usePhraseFrame("menumbuhkan");
-  const shadeAt = usePhraseFrame("meneduhkan");
+  const shadeAt = usePhraseFrame("menaungi");
   const healthyAt = usePhraseFrame("sehat kembali");
 
   const fishX = interpolate(frame, [0, 60, 120], [700, 650, -900], clamp);

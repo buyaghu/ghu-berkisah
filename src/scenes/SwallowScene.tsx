@@ -19,7 +19,7 @@ export const SwallowScene: React.FC<SceneProps> = () => {
   const mouth =
     interpolate(frame, [openAt, openAt + 15], [0, 1], clamp) *
     interpolate(frame, [gulpAt + 4, gulpAt + 10], [1, 0], clamp);
-  const leave = interpolate(frame, [calmAt + 30, durationInFrames], [0, -500], clamp);
+  const leave = interpolate(frame, [calmAt + 30, Math.max(durationInFrames, calmAt + 31)], [0, -500], clamp);
   const gulpSquash = frame > gulpAt + 8 && frame < gulpAt + 20 ? 1 + Math.sin((frame - gulpAt) * 0.6) * 0.04 : 1;
 
   return (

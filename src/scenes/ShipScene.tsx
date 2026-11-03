@@ -9,7 +9,7 @@ export const ShipScene: React.FC<SceneProps> = () => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   const sailAt = usePhraseFrame("Kapal mulai berlayar");
-  const gullsAt = usePhraseFrame("burung camar");
+  const gullsAt = usePhraseFrame("laut yang luas");
   const x = interpolate(frame, [0, sailAt, durationInFrames], [1150, 1100, 500], clamp);
   const sea = calmSea(740);
 

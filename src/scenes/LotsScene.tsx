@@ -63,9 +63,9 @@ const LotCard: React.FC<{
 
 export const LotsScene: React.FC<SceneProps> = () => {
   const frame = useCurrentFrame();
-  const revealAt = usePhraseFrame("nama Nabi Yunus");
+  const revealAt = usePhraseFrame("ternyata");
   const reveals = [null, revealAt, null];
-  const sadarAt = usePhraseFrame("Nabi Yunus pun sadar");
+  const sadarAt = usePhraseFrame("beliaulah");
 
   return (
     <AbsoluteFill>
