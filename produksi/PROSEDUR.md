@@ -3,18 +3,21 @@
 Dibaca oleh sesi terjadwal Claude Code. Semua waktu dalam **WIB (UTC+7)**.
 Pedoman wajib (syariat, sumber shahih, gaya visual, privasi) ada di `CLAUDE.md` — baca dulu.
 
-Jadwal tugas (scheduled tasks) Claude Code: produksi Sabtu 09.00, posting Sabtu 16.25, Minggu 08.55, Rabu 15.55
-(agar tayang ±16.30 / ±09.00 / ±16.00). Setiap tugas butuh konektor **Composio** dan **ElevenLabs** di pengaturan tugasnya.
+Jadwal tugas (scheduled tasks) Claude Code, **2 seri per pekan, tanpa langkah approval** (keputusan Kakak, 3 Nov 2026).
+Setiap paket: long = hari H (Sabtu/Rabu), short1 = H+1, short2 = H+2, semuanya pukul **16.30 WIB**.
+Tugas butuh konektor **Composio** dan **ElevenLabs** di pengaturan tugasnya.
 
 | Kapan | Sesi | Hasil |
 | --- | --- | --- |
-| Sabtu 09.00 | **Produksi** | Paket **berikutnya** (tayang Sabtu depan): 1 video panjang + 2 Shorts/Reels, diunggah *private*, laporan & minta approve |
-| Sabtu 16.30 | **Posting 1** | Video panjang tayang di YouTube (jika sudah approved) |
-| Minggu 09.00 | **Posting 2** | Shorts 1 tayang di YouTube Shorts + Instagram Reels @buyaaghu |
-| Rabu 16.00 | **Posting 3** | Shorts 2 tayang di YouTube Shorts + Instagram Reels @buyaaghu |
+| Sabtu & Rabu ±11.53 | **Produksi** | Paket berikutnya: render long + 2 Shorts, simpan di `rilis/<tanggal-long>/` repo privat, status `siap_rilis`. **Tidak mengunggah.** |
+| Setiap hari 15.01 | **Upload YouTube** | Untuk video yang jatuh tempo hari itu: unggah *private* + `publishAt` 16.30 WIB (tayang otomatis) |
+| 16.30 | **Reels Instagram** | Untuk Shorts yang jatuh tempo: posting Reels @buyaaghu (akun Composio `instagram_chiral-havage`) |
 
-Antrian episode & status ada di `produksi/antrian.json` (repo publik). Status:
-`antri` → `naskah_ada` → `siap_rilis` → `menunggu_approve` → `approved` → `tayang_long` → `tayang_short1` → `selesai`.
+Status: `antri` → `naskah_ada` → `siap_rilis` → `tayang_long` → `tayang_short1` → `selesai`.
+Status `perlu_cek` = **jangan diunggah otomatis** (ada keraguan dalil/isi); tunggu keputusan Kakak.
+Kakak dapat membatalkan/menyunting di YouTube Studio sebelum jam tayang.
+
+Antrian episode & status ada di `produksi/antrian.json` (repo publik).
 
 ## 0. Persiapan (semua sesi)
 
@@ -44,7 +47,7 @@ Akun:
   nama channel/akun benar sebelum upload.
 - ElevenLabs: suara **Ghu** `ucmsMSAaGjMUJ5LRZJIt`, model `eleven_v4`.
 
-## 1. Sesi Produksi (Sabtu 09.00)
+## 1. Sesi Produksi (Sabtu & Rabu ±11.53)
 
 1. Pilih paket pertama berstatus `antri`/`naskah_ada`. Jika tidak ada (semua sudah diproduksi), laporkan dan selesai.
 2. **Naskah** (`src/stories/<kisah>.ts`) bila belum ada: ikuti `CLAUDE.md` (hanya Al-Qur'an & hadits shahih,
@@ -67,42 +70,28 @@ Akun:
    `claude-proyek`. File > 25 MB dipecah dulu agar workbench tidak kehabisan memori:
    `split -b 20000000 -d -a 1 long.mp4 parts/long.mp4.part` (simpan `sha256sum`). Tulis juga
    `rilis/<tgl>/youtube-meta.json` (`{long|short1|short2: {title, description, tags}}`). Commit & push di sana.
-8. **Upload YouTube (private)** lewat `COMPOSIO_REMOTE_WORKBENCH`:
-   - unduh tiap pecahan dari GitHub: `git ls-tree` memberi `sha` blob, lalu satu sel per 1–2 pecahan:
-     `proxy_execute("GET", "/repos/buyaghu/claude-proyek/git/blobs/<sha>", "github")` → base64 decode → tambahkan
-     (append) ke `/home/user/rilis/<tgl>/long.mp4` (bukan `/mnt/files`), `del` + `gc.collect()`; cocokkan sha256;
-   - `upload_local_file(path)` → `s3key`;
-   - `YOUTUBE_MULTIPART_UPLOAD_VIDEO` (`privacyStatus: "private"`, `categoryId: "27"`, judul/deskripsi/tag dari naskah);
-   - set "dibuat untuk anak": `proxy_execute("PUT", "/videos", "youtube", query_params={"part": "status"}, body={"id": ..., "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": true, "embeddable": true, "publicStatsViewable": true, "license": "youtube"}})`
-     (endpoint relatif tanpa `/youtube/v3`; sertakan semua kolom status karena PUT menimpa nilai lama).
-   Lakukan untuk long + short-1 + short-2. Simpan videoId di `antrian.json` (`youtube.long/short1/short2`).
-9. Set status `menunggu_approve`, commit & push.
-10. **Laporan ke Kakak** (bahasa Indonesia): link YouTube Studio ketiga video private, ringkasan naskah & daftar
-    dalil, durasi, kredit ElevenLabs terpakai, dan hal yang perlu dicek (mis. pelafalan Arab).
-    Minta balasan **"approved"** di sesi ini sebelum tanggal tayangnya. Saat Kakak membalas "approved": ubah status ke
-    `approved`, commit & push. Jika ada revisi: perbaiki, render & upload ulang (hapus/ganti video lama), lapor lagi.
+8. **Berhenti di `siap_rilis`**: sesi produksi **tidak** mengunggah. Isi `rilis_dir` di `antrian.json`, commit & push.
+9. **Laporan ke Kakak** (bahasa Indonesia): ringkasan naskah & dalil, durasi, kredit ElevenLabs terpakai, hal yang
+   perlu dicek (mis. pelafalan Arab). Tidak perlu menunggu approval; tayang otomatis sesuai jadwal.
 
-## 2. Sesi Posting
+## 2. Sesi Upload YouTube & Reels
 
-1. Persiapan (langkah 0) lalu cari paket minggu ini.
-2. **Jika status belum `approved` (atau setelahnya): JANGAN posting.** Laporkan ke Kakak bahwa posting ditunda
-   karena belum di-approve, dan apa yang perlu dilakukan.
-3. **Sabtu (long)**: `YOUTUBE_UPDATE_VIDEO` `privacy_status: "public"` untuk `youtube.long`. Status → `tayang_long`.
-4. **Minggu (short1) / Rabu (short2)**:
-   - YouTube: `YOUTUBE_UPDATE_VIDEO` `privacy_status: "public"` untuk `youtube.short1` / `short2`.
-   - Instagram Reels @buyaaghu (akun Composio `instagram_facade-arhar`; cek dulu username `buyaaghu` dengan
-     INSTAGRAM_GET_USER_INFO, kalau bukan, berhenti). Cek 5 media terakhir agar tidak posting ganda.
-     Ambil `rilis/<tgl>/short-1.mp4` (atau `short-2.mp4`) dari repo privat ke workbench seperti langkah 1.8 →
-     `upload_local_file` → `INSTAGRAM_POST_IG_USER_MEDIA` dengan `media_type: "REELS"`,
-     `video_file: {name, mimetype: "video/mp4", s3key}`, `share_to_feed: true`, `thumb_offset: 2000`
-     (frame judul), caption apa adanya dari `naskah/<kisah>-shorts.md` (jangan ubah `#` jadi `%23`) →
-     `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH` (`max_wait_seconds: 300`). Simpan permalink.
-   - Simpan id di `antrian.json`, status → `tayang_short1` / `selesai`. Commit & push.
-5. Laporan singkat ke Kakak: link video yang tayang, atau kendala yang terjadi.
+1. Persiapan (langkah 0), lalu cari video yang `tayang`-nya jatuh tempo hari ini (long/short1/short2).
+2. **Status `perlu_cek`: jangan diunggah.** Laporkan ke Kakak.
+3. **Upload YouTube (15.01)**: ambil file dari `rilis_dir` repo privat ke workbench (pecahan blob GitHub, cocokkan sha256),
+   `upload_local_file` → `YOUTUBE_MULTIPART_UPLOAD_VIDEO` (`privacyStatus: "private"`, `categoryId: "27"`, judul/deskripsi/tag
+   dari `youtube-meta.json`), set `publishAt` 16.30 WIB, lalu "dibuat untuk anak":
+   `proxy_execute("PUT", "/videos", "youtube", query_params={"part": "status"}, body={"id": ..., "status": {"privacyStatus": "private", "publishAt": "<ISO>", "selfDeclaredMadeForKids": true, "embeddable": true, "publicStatsViewable": true, "license": "youtube"}})`.
+   Simpan videoId di `antrian.json`; status → `tayang_long` / `tayang_short1` / `selesai`.
+4. **Reels Instagram (16.30)** untuk Shorts: akun Composio `instagram_chiral-havage` (cek username `buyaaghu` dengan
+   INSTAGRAM_GET_USER_INFO, kalau bukan, berhenti). Cek 5 media terakhir agar tidak posting ganda, unggah
+   `short-1.mp4`/`short-2.mp4` (`INSTAGRAM_POST_IG_USER_MEDIA`, `REELS`, `share_to_feed: true`, `thumb_offset: 2000`,
+   caption dari `naskah/<kisah>-shorts.md`) lalu `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH`. Simpan permalink.
+5. Laporan singkat ke Kakak, atau kendala yang terjadi.
 
 ## Aturan keamanan
 
-- Tidak pernah memposting tanpa status `approved`.
+- Tidak pernah memposting video berstatus `perlu_cek`; Kakak dapat membatalkan di YouTube Studio.
 - Tidak pernah mengunggah video atau suara Ghu ke layanan publik pihak ketiga maupun repo publik;
   transfer file hanya lewat repo privat `claude-proyek`.
 - Jika ada keraguan dalil/isi, berhenti dan tanyakan ke Kakak.

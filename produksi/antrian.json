@@ -33,18 +33,19 @@
     "kisah": "yunus",
     "judul": "Nabi Yunus & Ikan Besar",
     "status": "siap_rilis",
-    "catatan": "Diproduksi 3 Nov 2026 (jalan manual). Video 06:15 + 2 Shorts (83 dtk & 102 dtk) sudah dirender & disimpan di repo privat rilis/2026-11-07/. Unggah PRIVATE ke YouTube tertunda: quotaExceeded (Video Uploads per day, reset ±15.00 WIB 4 Nov). Perlu diunggah ulang lalu status -> menunggu_approve.",
+    "catatan": "Diproduksi 3 Nov 2026 (jalan manual). Video 06:15 + 2 Shorts sudah dirender & disimpan di repo privat rilis/2026-11-07/. Tayang otomatis tanpa approval (keputusan Kakak 3 Nov). Unggah YouTube tertunda quotaExceeded; dikerjakan tugas 'Upload YouTube harian'. Cek: naskah ke ustadz, lafal doa, sinkron subtitle (timing kata perkiraan), SFX ombak/badai berulang.",
     "tayang": {
-      "long": "2026-11-07T16:30+07:00",
-      "short1": "2026-11-08T09:00+07:00",
-      "short2": "2026-11-11T16:00+07:00"
+      "long": "2026-11-04T16:30+07:00",
+      "short1": "2026-11-05T16:30+07:00",
+      "short2": "2026-11-06T16:30+07:00"
     },
     "shorts": [
       "Short-yunus-1-kegelapan",
       "Short-yunus-2-doa"
     ],
     "youtube": {},
-    "instagram": {}
+    "instagram": {},
+    "rilis_dir": "rilis/2026-11-07"
   },
   {
     "paket": 3,
@@ -53,9 +54,9 @@
     "status": "antri",
     "catatan": "QS. Hud: 25–49, QS. Nuh",
     "tayang": {
-      "long": "2026-11-14T16:30+07:00",
-      "short1": "2026-11-15T09:00+07:00",
-      "short2": "2026-11-18T16:00+07:00"
+      "long": "2026-11-07T16:30+07:00",
+      "short1": "2026-11-08T16:30+07:00",
+      "short2": "2026-11-09T16:30+07:00"
     },
     "shorts": [],
     "youtube": {},
@@ -68,9 +69,9 @@
     "status": "antri",
     "catatan": "QS. Al-Anbiya: 51–70",
     "tayang": {
-      "long": "2026-11-21T16:30+07:00",
-      "short1": "2026-11-22T09:00+07:00",
-      "short2": "2026-11-25T16:00+07:00"
+      "long": "2026-11-11T16:30+07:00",
+      "short1": "2026-11-12T16:30+07:00",
+      "short2": "2026-11-13T16:30+07:00"
     },
     "shorts": [],
     "youtube": {},
@@ -83,9 +84,9 @@
     "status": "antri",
     "catatan": "QS. As-Saffat: 99–111",
     "tayang": {
-      "long": "2026-11-28T16:30+07:00",
-      "short1": "2026-11-29T09:00+07:00",
-      "short2": "2026-12-02T16:00+07:00"
+      "long": "2026-11-14T16:30+07:00",
+      "short1": "2026-11-15T16:30+07:00",
+      "short2": "2026-11-16T16:30+07:00"
     },
     "shorts": [],
     "youtube": {},
@@ -98,9 +99,9 @@
     "status": "antri",
     "catatan": "QS. Asy-Syu'ara: 52–68",
     "tayang": {
-      "long": "2026-12-05T16:30+07:00",
-      "short1": "2026-12-06T09:00+07:00",
-      "short2": "2026-12-09T16:00+07:00"
+      "long": "2026-11-18T16:30+07:00",
+      "short1": "2026-11-19T16:30+07:00",
+      "short2": "2026-11-20T16:30+07:00"
     },
     "shorts": [],
     "youtube": {},
@@ -113,9 +114,9 @@
     "status": "antri",
     "catatan": "QS. Al-Kahfi: 60–82, HR. Bukhari & Muslim",
     "tayang": {
-      "long": "2026-12-12T16:30+07:00",
-      "short1": "2026-12-13T09:00+07:00",
-      "short2": "2026-12-16T16:00+07:00"
+      "long": "2026-11-21T16:30+07:00",
+      "short1": "2026-11-22T16:30+07:00",
+      "short2": "2026-11-23T16:30+07:00"
     },
     "shorts": [],
     "youtube": {},
@@ -128,9 +129,9 @@
     "status": "antri",
     "catatan": "QS. Yusuf",
     "tayang": {
-      "long": "2026-12-19T16:30+07:00",
-      "short1": "2026-12-20T09:00+07:00",
-      "short2": "2026-12-23T16:00+07:00"
+      "long": "2026-11-25T16:30+07:00",
+      "short1": "2026-11-26T16:30+07:00",
+      "short2": "2026-11-27T16:30+07:00"
     },
     "shorts": [],
     "youtube": {},
@@ -143,9 +144,9 @@
     "status": "antri",
     "catatan": "QS. Al-Anbiya: 83–84, Shad: 41–44",
     "tayang": {
-      "long": "2026-12-26T16:30+07:00",
-      "short1": "2026-12-27T09:00+07:00",
-      "short2": "2026-12-30T16:00+07:00"
+      "long": "2026-11-28T16:30+07:00",
+      "short1": "2026-11-29T16:30+07:00",
+      "short2": "2026-11-30T16:30+07:00"
     },
     "shorts": [],
     "youtube": {},
@@ -158,9 +159,9 @@
     "status": "antri",
     "catatan": "QS. An-Naml: 20–44",
     "tayang": {
-      "long": "2027-01-02T16:30+07:00",
-      "short1": "2027-01-03T09:00+07:00",
-      "short2": "2027-01-06T16:00+07:00"
+      "long": "2026-12-02T16:30+07:00",
+      "short1": "2026-12-03T16:30+07:00",
+      "short2": "2026-12-04T16:30+07:00"
     },
     "shorts": [],
     "youtube": {},
@@ -173,9 +174,9 @@
     "status": "antri",
     "catatan": "QS. Al-Baqarah: 249–251",
     "tayang": {
-      "long": "2027-01-09T16:30+07:00",
-      "short1": "2027-01-10T09:00+07:00",
-      "short2": "2027-01-13T16:00+07:00"
+      "long": "2026-12-05T16:30+07:00",
+      "short1": "2026-12-06T16:30+07:00",
+      "short2": "2026-12-07T16:30+07:00"
     },
     "shorts": [],
     "youtube": {},
