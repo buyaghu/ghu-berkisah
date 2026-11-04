@@ -32,8 +32,8 @@
     "paket": 2,
     "kisah": "yunus",
     "judul": "Nabi Yunus & Ikan Besar",
-    "status": "siap_rilis",
-    "catatan": "Diproduksi 3 Nov 2026 (jalan manual). Video 06:15 + 2 Shorts sudah dirender & disimpan di repo privat rilis/2026-11-07/. Tayang otomatis tanpa approval (keputusan Kakak 3 Nov). Unggah YouTube tertunda quotaExceeded; dikerjakan tugas 'Upload YouTube harian'. Cek: naskah ke ustadz, lafal doa, sinkron subtitle (timing kata perkiraan), SFX ombak/badai berulang.",
+    "status": "tayang_long",
+    "catatan": "Diproduksi 3 Nov 2026 (jalan manual). Video 06:15 + 2 Shorts sudah dirender & disimpan di repo privat rilis/2026-11-07/. Tayang otomatis tanpa approval (keputusan Kakak 3 Nov). Unggah YouTube tertunda quotaExceeded; dikerjakan tugas 'Upload YouTube harian'. Cek: naskah ke ustadz, lafal doa, sinkron subtitle (timing kata perkiraan), SFX ombak/badai berulang. Long diunggah 4 Nov 15.03 WIB (private, made for kids, publishAt 16.30 WIB terverifikasi); tanpa thumbnail kustom (tidak ada file). Short1/short2 dijadwalkan 5 & 6 Nov.",
     "tayang": {
       "long": "2026-11-04T16:30+07:00",
       "short1": "2026-11-05T16:30+07:00",
@@ -43,7 +43,9 @@
       "Short-yunus-1-kegelapan",
       "Short-yunus-2-doa"
     ],
-    "youtube": {},
+    "youtube": {
+      "long": "-g7Z4Hlv6hM"
+    },
     "instagram": {},
     "rilis_dir": "rilis/2026-11-07"
   },
