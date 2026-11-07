@@ -9,7 +9,7 @@ import {
 } from "remotion";
 import { GhuWalker } from "../components/Ghu";
 import { Bubbles, Clouds, IslamicPattern } from "../components/nature";
-import { Ant, BigFish } from "../components/objects";
+import { Ant, Ark, BigFish } from "../components/objects";
 import { usePhraseFrame } from "../lib/voice";
 import { arabicFont, bodyFont, colors, titleFont } from "../theme";
 import { clamp, type SceneProps } from "./common";
@@ -43,6 +43,38 @@ const MarchingAnts: React.FC = () => {
           </div>
         );
       })}
+    </>
+  );
+};
+
+const FloatingArk: React.FC = () => {
+  const frame = useCurrentFrame();
+  return (
+    <>
+      <div
+        style={{
+          position: "absolute",
+          left: 60,
+          top: 520,
+          width: 1260,
+          height: 330,
+          borderRadius: 60,
+          background: "linear-gradient(#9ADCF0, #2A8FB8)",
+          overflow: "hidden",
+        }}
+      >
+        <Bubbles count={10} seed="intro-ark" />
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          left: 270,
+          top: 400 + Math.sin(frame / 18) * 14,
+          rotate: `${Math.sin(frame / 25) * 2.5}deg`,
+        }}
+      >
+        <Ark width={780} />
+      </div>
     </>
   );
 };
@@ -186,7 +218,7 @@ export const IntroScene: React.FC<SceneProps> = ({ story }) => {
       {/* Bagian 2: ilustrasi & kartu di kiri, setelah Ghu sampai di kanan */}
       {hook && frame >= arrived && (
         <div style={{ position: "absolute", inset: 0, opacity: artIn, translate: `${(artIn - 1) * 200}px 0px` }}>
-          {hook.art === "ants" ? <MarchingAnts /> : <SwimmingFish />}
+          {hook.art === "ants" ? <MarchingAnts /> : hook.art === "ark" ? <FloatingArk /> : <SwimmingFish />}
         </div>
       )}
       {hook && frame >= cardFrame && (

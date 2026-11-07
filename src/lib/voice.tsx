@@ -61,3 +61,12 @@ export const usePhraseFrame = (phrase: string) => {
 // Apakah Ghu sedang mengucapkan sebuah kata pada detik t (untuk gerak mulut)
 export const isSpeakingAt = (voice: SceneVoice, t: number) =>
   voice.words.some((w) => t >= w.start && t <= w.end - 0.03);
+
+// Seperti usePhraseFrame, tapi bila frasa tidak ada di naskah (adegan dipakai sebagai shot
+// di scene lain) hasilnya `fallback`.
+export const usePhraseFrameOr = (phrase: string, fallback = 0) => {
+  const voice = useVoice();
+  const { fps } = useVideoConfig();
+  if (voice.text.indexOf(phrase) < 0) return fallback;
+  return Math.round((LEAD_IN + phraseSeconds(voice, phrase)) * fps);
+};

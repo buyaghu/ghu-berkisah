@@ -2,15 +2,15 @@ import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { Ship } from "../components/objects";
 import { Clouds, Lightning, Rain, Sea, Sky, stormSea } from "../components/nature";
-import { usePhraseFrame } from "../lib/voice";
+import { usePhraseFrameOr } from "../lib/voice";
 import { clamp, type SceneProps } from "./common";
 
 export const StormScene: React.FC<SceneProps> = () => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
-  const bolt1 = usePhraseFrame("ombak besar");
-  const bolt2 = usePhraseFrame("Para penumpang");
-  const rockAt = usePhraseFrame("bergoyang");
+  const bolt1 = usePhraseFrameOr("ombak besar", 200);
+  const bolt2 = usePhraseFrameOr("Para penumpang", 330);
+  const rockAt = usePhraseFrameOr("bergoyang", 150);
 
   const darken = interpolate(frame, [0, 40], [0, 1], clamp);
   const rock = interpolate(frame, [0, rockAt, rockAt + 20], [4, 8, 16], clamp);

@@ -83,16 +83,20 @@
   "paket": 3,
   "kisah": "nuh",
   "judul": "Nabi Nuh & Kapal Besar",
-  "status": "antri",
-  "catatan": "QS. Hud: 25–49, QS. Nuh",
+  "status": "siap_rilis",
+  "catatan": "QS. Hud: 25–49, QS. Nuh. Diproduksi 7 Nov 2026 (sesi terjadwal). Video 05:36 + 2 Shorts (86 dtk & 96 dtk) di repo privat rilis/2026-11-07-nuh/ (folder -nuh karena rilis/2026-11-07 sudah dipakai paket Yunus). Dalil dari Al-Qur'an + HR. Bukhari 3340/Muslim 194; makna 'tanur' disebut khilaf ulama tafsir di naskah. Cek: naskah ke ustadz, lafal doa Hud:41, timing subtitle dari jeda suara (bukan Scribe), tanpa thumbnail kustom.",
   "tayang": {
    "long": "2026-11-07T16:30+07:00",
    "short1": "2026-11-08T16:30+07:00",
    "short2": "2026-11-09T16:30+07:00"
   },
-  "shorts": [],
+  "shorts": [
+   "Short-nuh-1-kapal",
+   "Short-nuh-2-doa"
+  ],
   "youtube": {},
-  "instagram": {}
+  "instagram": {},
+  "rilis_dir": "rilis/2026-11-07-nuh"
  },
  {
   "paket": 4,

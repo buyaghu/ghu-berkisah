@@ -388,3 +388,58 @@ export const Banner: React.FC<{ color: string; wave?: number; height?: number }>
     <circle cx={58} cy={48} r={12} fill={colors.white} opacity={0.5} />
   </svg>
 );
+
+// Bahtera Nabi Nuh: lambung kayu besar dengan rumah kayu di atasnya. Tanpa penumpang yang digambar.
+// `build` 0..1 = seberapa jauh papan-papannya sudah terpasang (dari kiri ke kanan).
+export const Ark: React.FC<{ width?: number; build?: number }> = ({ width = 900, build = 1 }) => {
+  const cut = 20 + build * 760;
+  return (
+    <svg width={width} height={width * 0.62} viewBox="0 0 780 484" style={{ overflow: "visible" }}>
+      <defs>
+        <clipPath id="ark-reveal">
+          <rect x={0} y={0} width={cut} height={500} />
+        </clipPath>
+      </defs>
+      <g clipPath="url(#ark-reveal)">
+        {/* Rumah kayu di atas */}
+        <rect x={190} y={110} width={400} height={170} rx={12} fill="#B5763D" />
+        <path d="M165 115 L390 20 L615 115 Z" fill="#8A4F29" />
+        <path d="M165 115 L615 115" stroke="#6B3A1E" strokeWidth={8} />
+        {[245, 330, 415, 500].map((x) => (
+          <rect key={x} x={x} y={150} width={46} height={58} rx={10} fill="#FFE9A8" stroke="#6B3A1E" strokeWidth={6} />
+        ))}
+        {[250, 310, 370, 430, 490, 550].map((x) => (
+          <path key={x} d={`M${x} 225 L${x} 280`} stroke="#9C5B31" strokeWidth={4} />
+        ))}
+        {/* Lambung */}
+        <path d="M20 270 L760 270 C735 400 640 470 390 470 C140 470 45 400 20 270 Z" fill="#9C5B31" />
+        {[300, 335, 370, 405, 440].map((y, i) => (
+          <path
+            key={y}
+            d={`M${28 + i * 14} ${y} L${752 - i * 14} ${y}`}
+            stroke="#6B3A1E"
+            strokeWidth={5}
+            opacity={0.8}
+          />
+        ))}
+        <path d="M10 262 L770 262" stroke="#6B3A1E" strokeWidth={12} strokeLinecap="round" />
+        {[110, 220, 330, 440, 550, 660].map((x) => (
+          <circle key={x} cx={x} cy={320} r={9} fill="#F6D79B" />
+        ))}
+      </g>
+    </svg>
+  );
+};
+
+// Gunung dengan puncak lancip (gunung Judi)
+export const Mountain: React.FC<{ width?: number; color?: string; snow?: boolean }> = ({
+  width = 900,
+  color = "#8C7A6B",
+  snow = false,
+}) => (
+  <svg width={width} height={width * 0.7} viewBox="0 0 900 630" style={{ overflow: "visible" }}>
+    <path d="M0 630 L330 90 L450 230 L560 40 L900 630 Z" fill={color} />
+    <path d="M560 40 L900 630 L640 630 L520 260 Z" fill="#000" opacity={0.12} />
+    <path d="M330 90 L450 230 L400 250 L350 200 L300 150 Z" fill="#fff" opacity={snow ? 0.8 : 0} />
+  </svg>
+);
