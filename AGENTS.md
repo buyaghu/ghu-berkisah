@@ -10,6 +10,8 @@ Berlaku untuk agen AI mana pun (Codex, Claude Code, dll.). Proyek: animasi kisah
 3. [`produksi/CODEX.md`](produksi/CODEX.md): **protokol serah-terima** bila kamu mengambil alih pekerjaan
    dari agen lain (mis. Claude kehabisan batas pemakaian). Baca juga bila kamu yang diambil alih.
 4. [`produksi/antrian.json`](produksi/antrian.json): **satu-satunya sumber status** tiap paket.
+5. [`produksi/PENJAGA.md`](produksi/PENJAGA.md): aturan **penjaga otomatis**: kapan Codex menyelesaikan tugas yang
+   gagal dikerjakan Claude, tanpa perintah manual.
 
 ## Aturan yang tidak boleh dilanggar (ringkas; rincian di `CLAUDE.md`)
 

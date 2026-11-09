@@ -48,6 +48,8 @@ kerjakan hanya bagian netral (produksi, render, commit) dan siapkan panduan ungg
 
 ## Ambil alih dengan satu perintah
 
+> Ingin yang **otomatis penuh** tanpa perintah tiap kali? Lihat [`PENJAGA.md`](PENJAGA.md). Bagian ini untuk ambil alih manual.
+
 Terbukti di repo `warungkomen` (Day 3, 9 Nov 2026): Kakak memberi perintah, lalu **Codex sendiri yang membuat
 tugas sekali-jalan** untuk publish pada jam yang ditentukan. Untuk Ghu Berkisah:
 
