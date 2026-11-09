@@ -26,6 +26,8 @@ Berlaku untuk agen AI mana pun (Codex, Claude Code, dll.). Proyek: animasi kisah
 - **Jangan menulis kunci API, token, atau kata sandi** ke repo, antrian, catatan, atau log. Kunci hanya lewat
   variabel lingkungan atau konektor.
 - **Jangan memposting paket berstatus `perlu_cek`**, dan **selalu cek duplikat** sebelum mengunggah atau memposting.
+- **Jangan menaruh tautan unduhan** (mis. tautan berbagi Composio) ke video atau suara Ghu di repo publik, catatan,
+  atau log. Bukti posting cukup berupa ID, permalink publik, waktu, dan hash.
 - Akun Composio lain di luar proyek ini (mis. channel lain milik pemilik) **bukan** bagian dari pekerjaan ini.
 
 ## Perintah
@@ -46,5 +48,6 @@ caption dan deskripsi di `naskah/`. README memuat panduan lengkapnya.
 
 - Kerjakan di branch `main` kecuali diminta lain. `git pull` dulu, commit kecil per langkah, lalu push.
 - Perbarui `produksi/antrian.json` **segera setelah tiap aksi eksternal** (unggah, posting) agar agen berikutnya
-  tidak mengulang pekerjaan yang sama.
+  tidak mengulang pekerjaan yang sama. Kalimat pertama `catatan` paket: `STATUS TERBARU: ...`. Bukti posting
+  ditulis ke `produksi/bukti/` (lihat `produksi/CODEX.md`).
 - Bahasa naskah, catatan, dan laporan: **Indonesia**. Sapa pemilik channel dengan "Kakak".

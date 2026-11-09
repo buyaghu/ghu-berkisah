@@ -12,7 +12,7 @@ Pedoman wajib tetap di `CLAUDE.md`; di sini hanya cara berpindah tangan dengan a
 | Suara Ghu (VO) dan SFX | skrip `npm run voiceover` / `npm run sfx` | butuh `ELEVENLABS_API_KEY` (atau konektor ElevenLabs) |
 | Video dan suara dari repo privat | `git clone` biasa | butuh akses **baca dan tulis** ke `buyaghu/claude-proyek` |
 | Unggah YouTube dan Reels Instagram | langkah dan aturan di `PROSEDUR.md` §2 | butuh **konektor Composio** (akun YouTube Ghu Berkisah dan Instagram @buyaaghu) |
-| Penjadwalan otomatis | tidak ada di repo | Claude memakai tugas terjadwal; Codex dijalankan manual oleh Kakak dengan prompt di bawah |
+| Penjadwalan otomatis | tidak ada di repo | Claude: tugas terjadwal. Codex: membuat sendiri **tugas sekali-jalan** atas perintah Kakak (terbukti di repo `warungkomen`, Day 3, 9 Nov 2026) |
 
 Nama alat di `PROSEDUR.md` (mis. `YOUTUBE_MULTIPART_UPLOAD_VIDEO`, `INSTAGRAM_POST_IG_USER_MEDIA`) adalah
 nama tool **Composio**. Bila Codex tersambung ke Composio, pakai nama yang sama. Bila tidak tersambung,
@@ -46,9 +46,53 @@ kerjakan hanya bagian netral (produksi, render, commit) dan siapkan panduan ungg
 - File video besar: pecah per ±20 MB (`split -b 20000000`) dan catat `sha256` agar workbench tidak kehabisan memori.
   Rakit ulang dan cocokkan `sha256` sebelum mengunggah.
 
+## Ambil alih dengan satu perintah
+
+Terbukti di repo `warungkomen` (Day 3, 9 Nov 2026): Kakak memberi perintah, lalu **Codex sendiri yang membuat
+tugas sekali-jalan** untuk publish pada jam yang ditentukan. Untuk Ghu Berkisah:
+
+1. Kakak memberi perintah di Codex, mis. "Claude kena limit, ambil alih Ghu Berkisah untuk pekan ini".
+   **Perintah Kakak itu adalah otorisasinya.** Tanpa perintah, Codex tidak membuat tugas yang memposting apa pun.
+2. Codex menjalankan protokol serah-terima di atas, lalu mendaftar item yang jatuh tempo dalam rentang yang diminta.
+3. Sebelum membuat tugas terjadwal, Codex **memeriksa tugas yang sudah ada** agar tidak dobel. Satu item = satu tugas,
+   dinamai `Ghu <paket>-<jenis> <tanggal> <jam>` (mis. `Ghu 4-short1 2026-11-12 15.01`).
+4. Per item: unggah YouTube pukul 15.01 dan Reels pukul 16.30 (pola di bawah). Item hari ini yang jamnya sudah lewat
+   dikerjakan sekarang, bukan dijadwalkan.
+5. Codex mencatat tugas yang dibuat di `catatan` paket dan menulis berkas bukti setelah tiap posting.
+6. Tugas yang sudah jalan tidak dibuat ulang. Bila gagal: catat penyebab, lapor, jangan mencoba berulang.
+
+## Pola Reels Instagram: container dulu, publish terjadwal
+
+1. Cek akun dan username `buyaaghu`, lalu cek 5 media terakhir (cegah duplikat).
+2. Buat container REELS (`share_to_feed: true`, `thumb_offset: 2000`, caption dari `naskah/<kisah>-shorts.md`),
+   tunggu sampai status `FINISHED`. Menurut dokumentasi Meta container kedaluwarsa dalam ±24 jam (verifikasi),
+   jadi buat pada hari yang sama dengan publish.
+3. Tugas sekali-jalan pukul 16.30 WIB memanggil publish **tepat satu kali**, lalu memverifikasi media dan permalink.
+4. Container `FINISHED` dan tugas aktif **belum berarti terbit**. Jangan menyatakan terbit sebelum permalink terverifikasi.
+   Jangan memanggil publish atau membuat tugas kedua secara manual selama tugas terjadwalnya masih aktif.
+
+Pola ini menyelesaikan **Instagram saja**. Untuk YouTube, `publishAt` dan "dibuat untuk anak" tetap tidak bisa diatur
+lewat tool Composio (lihat kendala di atas): biarkan *private*, lapor, dan Kakak yang mengatur di YouTube Studio.
+
+## Berkas bukti dan status terbaru
+
+- Setelah tiap unggah atau posting, tulis `produksi/bukti/<paket>-<jenis>.json`, mis. `4-short1.json`:
+  `{"agen": "Codex", "waktu_terbit": "...", "youtube_id": "...", "instagram": {"media_id": "...", "permalink": "..."}, "sha256": "..."}`.
+  Isi **hanya** ID, tautan publik, waktu, dan hash. **Jangan** menaruh tautan unduhan video atau suara Ghu.
+- Kalimat pertama `catatan` paket selalu **`STATUS TERBARU: ...`** (satu kalimat, posisi sekarang). Riwayat ditaruh sesudahnya.
+  Agen berikutnya cukup membaca kalimat itu lebih dulu.
+
 ## Prompt siap pakai untuk Codex
 
 Kakak tinggal salin ke Codex (repo `buyaghu/ghu-berkisah`, dengan repo privat di `../claude-proyek`).
+
+**Ambil alih sepenuhnya saat Claude kena limit** (Kakak yang memberi perintah, lalu Codex membuat tugas terjadwalnya):
+
+> Claude kena limit. Ambil alih Ghu Berkisah untuk <rentang, mis. pekan ini>. Baca `AGENTS.md`, `CLAUDE.md`,
+> `produksi/PROSEDUR.md`, dan `produksi/CODEX.md`. Ikuti protokol serah-terima dan bagian "Ambil alih dengan satu perintah":
+> daftar item yang jatuh tempo, cek tugas yang sudah ada agar tidak dobel, lalu buat tugas sekali-jalan untuk unggah
+> YouTube 15.01 dan Reels Instagram 16.30. Produksi paket berikutnya bila belum `siap_rilis`. Tulis berkas bukti dan
+> `STATUS TERBARU` di tiap paket. Paket `perlu_cek` jangan disentuh.
 
 **Produksi paket berikutnya** (Sabtu dan Rabu sekitar 11.53 WIB):
 
@@ -67,6 +111,7 @@ Kakak tinggal salin ke Codex (repo `buyaghu/ghu-berkisah`, dengan repo privat di
 
 ## Saat Claude kembali
 
-Tugas terjadwal Claude membaca `antrian.json` dan `catatan` yang sama. Selama catatan dan ID selalu diperbarui
-dengan protokol di atas, Claude melanjutkan dari titik terakhir tanpa mengulang apa pun. Tidak perlu mematikan
-tugas terjadwalnya; cek duplikat di langkah 3 mencegah posting ganda.
+Tugas terjadwal Claude membaca `antrian.json` dan `catatan` yang sama. Selama catatan, ID, dan berkas bukti selalu
+diperbarui dengan protokol di atas, Claude melanjutkan dari titik terakhir tanpa mengulang apa pun.
+Tugas sekali-jalan milik Codex dan tugas Claude bisa berjalan berdampingan; cek duplikat di langkah 3 mencegah posting
+ganda. Bila Claude sudah pulih, Kakak boleh menonaktifkan tugas sekali-jalan Codex yang belum jalan.
