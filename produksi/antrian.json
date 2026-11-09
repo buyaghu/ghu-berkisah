@@ -83,19 +83,21 @@
   "paket": 3,
   "kisah": "nuh",
   "judul": "Nabi Nuh & Kapal Besar",
-  "status": "siap_rilis",
-  "catatan": "QS. Hud: 25–49, QS. Nuh. Diproduksi 7 Nov 2026 (sesi terjadwal). Video 05:36 + 2 Shorts (86 dtk & 96 dtk) di repo privat rilis/2026-11-07-nuh/ (folder -nuh karena rilis/2026-11-07 sudah dipakai paket Yunus). Dalil dari Al-Qur'an + HR. Bukhari 3340/Muslim 194; makna 'tanur' disebut khilaf ulama tafsir di naskah. Cek: naskah ke ustadz, lafal doa Hud:41, timing subtitle dari jeda suara (bukan Scribe), tanpa thumbnail kustom. 7 Nov 15.03 WIB: Long diunggah ke Ghu Berkisah (ID QHovQCeI1fc), PRIVATE, kategori 27, tanpa thumbnail kustom. publishAt & 'dibuat untuk anak' TIDAK bisa diset via tool Composio (proxy 403 untuk akun non-default) — menunggu Kakak di YouTube Studio: set 'dibuat untuk anak-anak' lalu Publik/jadwalkan 16.30 WIB.",
+  "status": "tayang_long",
+  "catatan": "STATUS TERBARU: 9 Nov 2026 malam, Kakak mengunggah manual Short1 (wPuijmD8Ep4) dan Short2 (cymqzfVXMok) ke YouTube Ghu Berkisah: private, dibuat untuk anak, terjadwal tayang Short1 10 Nov 16.29 WIB dan Short2 11 Nov 19.00 WIB (terverifikasi via API; jam tayang di kolom tayang disesuaikan dengan kenyataan). Long QHovQCeI1fc sudah PUBLIC dan dibuat untuk anak. Reels Instagram Short1/Short2 BELUM diposting. Riwayat: QS. Hud: 25–49, QS. Nuh. Diproduksi 7 Nov 2026 (sesi terjadwal). Video 05:36 + 2 Shorts (86 dtk & 96 dtk) di repo privat rilis/2026-11-07-nuh/ (folder -nuh karena rilis/2026-11-07 sudah dipakai paket Yunus). Dalil dari Al-Qur'an + HR. Bukhari 3340/Muslim 194; makna 'tanur' disebut khilaf ulama tafsir di naskah. Cek: naskah ke ustadz, lafal doa Hud:41, timing subtitle dari jeda suara (bukan Scribe), tanpa thumbnail kustom. 7 Nov 15.03 WIB: Long diunggah ke Ghu Berkisah (ID QHovQCeI1fc), PRIVATE, kategori 27, tanpa thumbnail kustom. publishAt & 'dibuat untuk anak' TIDAK bisa diset via tool Composio (proxy 403 untuk akun non-default) — menunggu Kakak di YouTube Studio: set 'dibuat untuk anak-anak' lalu Publik/jadwalkan 16.30 WIB.",
   "tayang": {
    "long": "2026-11-07T16:30+07:00",
-   "short1": "2026-11-08T16:30+07:00",
-   "short2": "2026-11-09T16:30+07:00"
+   "short1": "2026-11-10T16:29+07:00",
+   "short2": "2026-11-11T19:00+07:00"
   },
   "shorts": [
    "Short-nuh-1-kapal",
    "Short-nuh-2-doa"
   ],
   "youtube": {
-   "long": "QHovQCeI1fc"
+   "long": "QHovQCeI1fc",
+   "short1": "wPuijmD8Ep4",
+   "short2": "cymqzfVXMok"
   },
   "instagram": {},
   "rilis_dir": "rilis/2026-11-07-nuh"
