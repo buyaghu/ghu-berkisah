@@ -2,6 +2,7 @@
 
 Dibaca oleh sesi terjadwal Claude Code. Semua waktu dalam **WIB (UTC+7)**.
 Pedoman wajib (syariat, sumber shahih, gaya visual, privasi) ada di `CLAUDE.md` — baca dulu.
+Agen lain (mis. Codex) atau pengambilalihan saat Claude terkena batas pemakaian: baca `AGENTS.md` dan `produksi/CODEX.md`.
 
 Jadwal tugas (scheduled tasks) Claude Code, **2 seri per pekan, tanpa langkah approval** (keputusan Kakak, 3 Nov 2026).
 Setiap paket: long = hari H (Sabtu/Rabu), short1 = H+1, short2 = H+2, semuanya pukul **16.30 WIB**.
@@ -96,5 +97,5 @@ Akun:
   transfer file hanya lewat repo privat `claude-proyek`.
 - Jika ada keraguan dalil/isi, berhenti dan tanyakan ke Kakak.
 - Jika YouTube menjawab `quotaExceeded` / `Video Uploads per day` (kuota harian aplikasi Composio bersama, reset
-  ±14.00 WIB), jangan mengulang terus: simpan `s3key` di `/home/user/rilis/<tgl>/s3.json`, laporkan ke Kakak,
-  dan jadwalkan percobaan ulang (`send_later`) sekitar 14.05 WIB.
+  ±15.00 WIB), jangan mengulang terus: simpan `s3key` di `/home/user/rilis/<tgl>/s3.json`, laporkan ke Kakak,
+  dan jadwalkan percobaan ulang (`send_later`) sekitar 15.05 WIB.
