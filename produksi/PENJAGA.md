@@ -29,8 +29,12 @@ Item yang tertinggal dari hari-hari sebelumnya (jatuh tempo, belum selesai) juga
 
 1. `git pull` kedua repo. Cek tanggal dengan `TZ=Asia/Jakarta date`.
 2. Cari item sesuai tabel. Tidak ada: **berhenti**, tulis satu baris laporan, jangan mengubah apa pun.
-3. Ada item, tetapi Claude kelihatan **sedang atau baru bekerja** (ada commit di salah satu repo dalam 20 menit
-   terakhir, atau `STATUS TERBARU` dari Claude dalam 20 menit): tunggu 15 menit, cek ulang **sekali**, lalu lanjut.
+3. Ada item, tetapi Claude kelihatan **sedang atau baru bekerja**: ada commit dalam 20 menit terakhir yang
+   **menyentuh** `produksi/antrian.json`, `produksi/bukti/`, `rilis/`, atau `public/voiceover/` (repo publik **dan**
+   privat), atau `STATUS TERBARU` dari Claude dalam 20 menit. Commit lain (dokumentasi, kode, naskah yang tidak
+   terkait item itu) **tidak dihitung**. Bila ya: tunggu 15 menit, cek ulang **sekali**, lalu lanjut.
+   Untuk repo privat, penjaga hanya membaca riwayat commit (waktu, pesan, nama file) dan daftar file; isi video
+   atau suara tidak diambil.
 4. `catatan` hari ini menyebut `quotaExceeded` atau token Instagram ditolak: **jangan mengulang**. Lapor ke Kakak.
    Penjaga tidak bisa memperbaiki kuota atau token.
 5. Paket berstatus `perlu_cek`: jangan disentuh.
@@ -45,6 +49,18 @@ Item yang tertinggal dari hari-hari sebelumnya (jatuh tempo, belum selesai) juga
   otomatis, dan dilaporkan. Dalil dari AI cadangan belum dicek manusia. Kakak boleh mengubah aturan ini.
 - Video harus tersimpan sebelum **14.30**. Bila tidak sempat, jangan menyimpan hasil setengah jadi sebagai
   `siap_rilis`; catat dan lapor.
+
+## Item tertinggal
+
+Tugas Claude hanya mengerjakan item yang jatuh tempo **hari itu**. Item yang tanggalnya sudah lewat dan belum selesai
+tidak akan diambil Claude lagi. Itu justru tugas penjaga: tiap pemeriksaan mencakup semua item tertinggal, bukan
+hanya yang hari ini. Item tertinggal yang jamnya sudah lewat dikerjakan **sekarang** (YouTube langsung diunggah,
+Reels langsung diposting), bukan dijadwalkan ulang, kecuali Kakak memutuskan lain.
+
+## Rekonsiliasi catatan
+
+Bila kenyataan di platform berbeda dari `antrian.json` (mis. video sudah public padahal catatan masih menyebut
+private), **perbaiki catatan dan status** supaya cocok dengan kenyataan. Jangan mengunggah ulang.
 
 ## Memasang penjaga (sekali, oleh Kakak, di Codex)
 
