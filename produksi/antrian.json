@@ -83,8 +83,8 @@
   "paket": 3,
   "kisah": "nuh",
   "judul": "Nabi Nuh & Kapal Besar",
-  "status": "tayang_short1",
-  "catatan": "STATUS TERBARU: 10 Nov 2026 16.30.16 WIB (Codex), Reels Short1 terbit terverifikasi (media_id 18359773417168515); YouTube Short1 wPuijmD8Ep4 sudah public dan dibuat untuk anak, Short2 cymqzfVXMok masih private terjadwal 10 Nov 19.00 WIB menurut API, Reels Short2 belum terbit. Riwayat: STATUS TERBARU: 9 Nov 2026 malam, Kakak mengunggah manual Short1 (wPuijmD8Ep4) dan Short2 (cymqzfVXMok) ke YouTube Ghu Berkisah: private, dibuat untuk anak, terjadwal tayang Short1 10 Nov 16.29 WIB dan Short2 11 Nov 19.00 WIB (terverifikasi via API; jam tayang di kolom tayang disesuaikan dengan kenyataan). Long QHovQCeI1fc sudah PUBLIC dan dibuat untuk anak. Reels Instagram Short1/Short2 BELUM diposting. Riwayat: QS. Hud: 25–49, QS. Nuh. Diproduksi 7 Nov 2026 (sesi terjadwal). Video 05:36 + 2 Shorts (86 dtk & 96 dtk) di repo privat rilis/2026-11-07-nuh/ (folder -nuh karena rilis/2026-11-07 sudah dipakai paket Yunus). Dalil dari Al-Qur'an + HR. Bukhari 3340/Muslim 194; makna 'tanur' disebut khilaf ulama tafsir di naskah. Cek: naskah ke ustadz, lafal doa Hud:41, timing subtitle dari jeda suara (bukan Scribe), tanpa thumbnail kustom. 7 Nov 15.03 WIB: Long diunggah ke Ghu Berkisah (ID QHovQCeI1fc), PRIVATE, kategori 27, tanpa thumbnail kustom. publishAt & 'dibuat untuk anak' TIDAK bisa diset via tool Composio (proxy 403 untuk akun non-default) — menunggu Kakak di YouTube Studio: set 'dibuat untuk anak-anak' lalu Publik/jadwalkan 16.30 WIB.",
+  "status": "selesai",
+  "catatan": "STATUS TERBARU: 10 Nov 2026 19.01.24 WIB (Codex), Reels Short2 terbit terverifikasi (media_id 17912838807312123); YouTube Short2 cymqzfVXMok sudah public, processed dan dibuat untuk anak; seluruh Paket 3 selesai, Reels Short1 tetap terverifikasi pada catatan sebelumnya. Riwayat: STATUS TERBARU: 10 Nov 2026 16.30.16 WIB (Codex), Reels Short1 terbit terverifikasi (media_id 18359773417168515); YouTube Short1 wPuijmD8Ep4 sudah public dan dibuat untuk anak, Short2 cymqzfVXMok masih private terjadwal 10 Nov 19.00 WIB menurut API, Reels Short2 belum terbit. Riwayat: STATUS TERBARU: 9 Nov 2026 malam, Kakak mengunggah manual Short1 (wPuijmD8Ep4) dan Short2 (cymqzfVXMok) ke YouTube Ghu Berkisah: private, dibuat untuk anak, terjadwal tayang Short1 10 Nov 16.29 WIB dan Short2 11 Nov 19.00 WIB (terverifikasi via API; jam tayang di kolom tayang disesuaikan dengan kenyataan). Long QHovQCeI1fc sudah PUBLIC dan dibuat untuk anak. Reels Instagram Short1/Short2 BELUM diposting. Riwayat: QS. Hud: 25–49, QS. Nuh. Diproduksi 7 Nov 2026 (sesi terjadwal). Video 05:36 + 2 Shorts (86 dtk & 96 dtk) di repo privat rilis/2026-11-07-nuh/ (folder -nuh karena rilis/2026-11-07 sudah dipakai paket Yunus). Dalil dari Al-Qur'an + HR. Bukhari 3340/Muslim 194; makna 'tanur' disebut khilaf ulama tafsir di naskah. Cek: naskah ke ustadz, lafal doa Hud:41, timing subtitle dari jeda suara (bukan Scribe), tanpa thumbnail kustom. 7 Nov 15.03 WIB: Long diunggah ke Ghu Berkisah (ID QHovQCeI1fc), PRIVATE, kategori 27, tanpa thumbnail kustom. publishAt & 'dibuat untuk anak' TIDAK bisa diset via tool Composio (proxy 403 untuk akun non-default) — menunggu Kakak di YouTube Studio: set 'dibuat untuk anak-anak' lalu Publik/jadwalkan 16.30 WIB.",
   "tayang": {
    "long": "2026-11-07T16:30+07:00",
    "short1": "2026-11-10T16:29+07:00",
@@ -105,9 +105,18 @@
     "permalink": "https://www.instagram.com/reel/DfjjsztCK6_/",
     "waktu_tayang": "2026-11-10T16:30:16+07:00",
     "akun_composio": "instagram_chiral-havage"
+   },
+   "short2": {
+    "media_id": "17912838807312123",
+    "permalink": "https://www.instagram.com/reel/Dfj1UBiCCwe/",
+    "waktu_tayang": "2026-11-10T19:01:24+07:00",
+    "akun_composio": "instagram_chiral-havage"
    }
   },
-  "rilis_dir": "rilis/2026-11-07-nuh"
+  "rilis_dir": "rilis/2026-11-07-nuh",
+  "youtube_status": {
+   "short2": "public, processed, dibuat untuk anak (terverifikasi Codex 10 Nov 2026 19.01 WIB)"
+  }
  },
  {
   "paket": 4,
