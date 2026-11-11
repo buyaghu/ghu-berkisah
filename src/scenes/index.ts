@@ -22,6 +22,7 @@ import { ReturnScene } from "./ReturnScene";
 import { ShipScene } from "./ShipScene";
 import { ShoreScene } from "./ShoreScene";
 import { ArkBuildScene, FloodScene, JudiScene } from "./ArkScenes";
+import { CityEmptyScene, FireBuildScene, FireScene, IdolsCloseScene, IdolsScene, SkyEarthScene } from "./IbrahimScenes";
 import { StormScene } from "./StormScene";
 import { SwallowScene } from "./SwallowScene";
 
@@ -55,6 +56,15 @@ export const visuals: Record<VisualKey, VisualConfig> = {
   arkBuild: { component: ArkBuildScene, avatar: true, captionsLeft: 330 },
   flood: { component: FloodScene, avatar: true, captionsLeft: 330 },
   judi: { component: JudiScene, avatar: true, captionsLeft: 330 },
+  idols: { component: IdolsScene, avatar: true, captionsLeft: 330 },
+  idolsClose: { component: IdolsCloseScene, avatar: true, captionsLeft: 330 },
+  idolsBroken: { component: IdolsScene, avatar: true, captionsLeft: 330 },
+  idolsAsk: { component: IdolsScene, avatar: true, captionsLeft: 330 },
+  cityEmpty: { component: CityEmptyScene, avatar: true, captionsLeft: 330 },
+  skyEarth: { component: SkyEarthScene, avatar: true, captionsLeft: 330 },
+  fire: { component: FireScene, avatar: true, captionsLeft: 330 },
+  fireBuild: { component: FireBuildScene, avatar: true, captionsLeft: 330 },
+  fireCool: { component: FireScene, avatar: true, captionsLeft: 330 },
   doa: { component: DoaScene, avatar: false, captionsLeft: null },
   shore: { component: ShoreScene, avatar: true, captionsLeft: 330 },
   return: { component: ReturnScene, avatar: true, captionsLeft: 330 },

@@ -13,6 +13,7 @@ import { Ant, Ark, BigFish } from "../components/objects";
 import { usePhraseFrame } from "../lib/voice";
 import { arabicFont, bodyFont, colors, titleFont } from "../theme";
 import { clamp, type SceneProps } from "./common";
+import { BigFire } from "./IbrahimScenes";
 
 // Pembuka. Bagian 1: Ghu di kiri, judul di kanan.
 // Bagian 2 (introHook): judul hilang, Ghu berjalan ke kanan, lalu ilustrasi & kartu muncul di kiri.
@@ -218,7 +219,17 @@ export const IntroScene: React.FC<SceneProps> = ({ story }) => {
       {/* Bagian 2: ilustrasi & kartu di kiri, setelah Ghu sampai di kanan */}
       {hook && frame >= arrived && (
         <div style={{ position: "absolute", inset: 0, opacity: artIn, translate: `${(artIn - 1) * 200}px 0px` }}>
-          {hook.art === "ants" ? <MarchingAnts /> : hook.art === "ark" ? <FloatingArk /> : <SwimmingFish />}
+          {hook.art === "ants" ? (
+            <MarchingAnts />
+          ) : hook.art === "ark" ? (
+            <FloatingArk />
+          ) : hook.art === "fire" ? (
+            <div style={{ position: "absolute", left: 290, top: 380 }}>
+              <BigFire width={800} cool={interpolate(frame, [arrived + 60, arrived + 140], [0, 1], clamp)} seed="intro" />
+            </div>
+          ) : (
+            <SwimmingFish />
+          )}
         </div>
       )}
       {hook && frame >= cardFrame && (

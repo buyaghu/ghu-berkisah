@@ -62,6 +62,22 @@ export const shorts: ShortDef[] = [
     introTopic: "doa Nabi Nuh 'alaihissalam saat berlayar, doa agar perjalanan kita diberkahi",
     sceneIds: ["07-doa", "08-surut"],
   },
+  {
+    id: "Short-ibrahim-api-1-api-dingin",
+    storyId: "ibrahim-api",
+    title: "Api yang Menjadi Dingin",
+    art: "doa",
+    introTopic: "api besar yang menjadi dingin, dari kisah Nabi Ibrahim 'alaihissalam",
+    sceneIds: ["08-api", "10-dingin"],
+  },
+  {
+    id: "Short-ibrahim-api-2-tawakal",
+    storyId: "ibrahim-api",
+    title: "Kalimat Tawakal Nabi Ibrahim",
+    art: "doa",
+    introTopic: "kalimat tawakal Nabi Ibrahim 'alaihissalam, yang bisa kita ucapkan saat merasa takut",
+    sceneIds: ["09-doa", "11-selamat"],
+  },
 ];
 
 export const shortIntroId = (short: ShortDef) => `${short.id}-intro`;

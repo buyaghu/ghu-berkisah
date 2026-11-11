@@ -80,7 +80,7 @@ export type Story = {
   // lalu ilustrasi (`art`) dan kartu muncul di kiri
   introHook?: {
     phrase: string;
-    art: "ants" | "fish" | "ark";
+    art: "ants" | "fish" | "ark" | "fire";
     cardPhrase: string;
     cardTitle: string;
     cardArab?: string;
@@ -115,6 +115,15 @@ export type VisualKey =
   | "flood"
   | "judi"
   | "return"
+  | "idols"
+  | "idolsClose"
+  | "idolsBroken"
+  | "idolsAsk"
+  | "cityEmpty"
+  | "skyEarth"
+  | "fire"
+  | "fireBuild"
+  | "fireCool"
   | "hikmah"
   | "quiz"
   | "outro";
