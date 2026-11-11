@@ -73,7 +73,7 @@ export const shorts: ShortDef[] = [
   {
     id: "Short-ibrahim-api-2-tawakal",
     storyId: "ibrahim-api",
-    title: "Kalimat Tawakal Nabi Ibrahim",
+    title: "Kalimat Tawakal",
     art: "doa",
     introTopic: "kalimat tawakal Nabi Ibrahim 'alaihissalam, yang bisa kita ucapkan saat merasa takut",
     sceneIds: ["09-doa", "11-selamat"],
