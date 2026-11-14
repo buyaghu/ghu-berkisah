@@ -1,268 +1,268 @@
 [
-  {
-    "paket": 1,
-    "kisah": "sulaiman",
-    "judul": "Nabi Sulaiman & Semut",
-    "status": "selesai",
-    "catatan": "Diproduksi 30–31 Okt 2026 & di-approve Kakak. Diunggah private ke YouTube 31 Okt (dibuat untuk anak); tayang 31 Okt, 1 Nov, 4 Nov. Short1 IG tayang 1 Nov 11.52 WIB (manual, tugas 08.55 gagal karena batas pemakaian; koneksi instagram_facade-arhar token invalid, dipakai instagram_chiral-havage). YouTube short1 tertunda: quotaExceeded, dicoba ulang ±14.05 WIB. Short1 & Short2 YouTube dipublikasikan manual oleh Kakak 3 Nov 2026 (public). Short2 IG tayang 4 Nov 15.58 WIB oleh sesi posting.",
-    "tayang": {
-      "long": "2026-10-31T16:30+07:00",
-      "short1": "2026-11-01T09:00+07:00",
-      "short2": "2026-11-04T16:00+07:00"
-    },
-    "shorts": [
-      "Short-sulaiman-1-semut-peduli",
-      "Short-sulaiman-2-doa"
-    ],
-    "youtube": {
-      "long": "MbDB9XX9Nxs",
-      "short1": "jE6HxKek1OU",
-      "short2": "iAGqJaZo6NQ"
-    },
-    "instagram": {
-      "short1": {
-        "media_id": "18127111153923175",
-        "permalink": "https://www.instagram.com/reel/DfL6n5CinW9/",
-        "waktu_tayang": "2026-11-01T11:52:53+07:00",
-        "akun_composio": "instagram_chiral-havage"
-      },
-      "short2": {
-        "media_id": "18656906011001735",
-        "permalink": "https://www.instagram.com/reel/DfUFJRwjLj6/",
-        "waktu_tayang": "2026-11-04T15:58:16+07:00",
-        "akun_composio": "instagram_chiral-havage"
-      }
-    },
-    "youtube_status": {
-      "short1": "public (dipublikasikan manual oleh Kakak, 3 Nov 2026)",
-      "short2": "public (dipublikasikan manual oleh Kakak, 3 Nov 2026)"
-    }
+ {
+  "paket": 1,
+  "kisah": "sulaiman",
+  "judul": "Nabi Sulaiman & Semut",
+  "status": "selesai",
+  "catatan": "Diproduksi 30–31 Okt 2026 & di-approve Kakak. Diunggah private ke YouTube 31 Okt (dibuat untuk anak); tayang 31 Okt, 1 Nov, 4 Nov. Short1 IG tayang 1 Nov 11.52 WIB (manual, tugas 08.55 gagal karena batas pemakaian; koneksi instagram_facade-arhar token invalid, dipakai instagram_chiral-havage). YouTube short1 tertunda: quotaExceeded, dicoba ulang ±14.05 WIB. Short1 & Short2 YouTube dipublikasikan manual oleh Kakak 3 Nov 2026 (public). Short2 IG tayang 4 Nov 15.58 WIB oleh sesi posting.",
+  "tayang": {
+   "long": "2026-10-31T16:30+07:00",
+   "short1": "2026-11-01T09:00+07:00",
+   "short2": "2026-11-04T16:00+07:00"
   },
-  {
-    "paket": 2,
-    "kisah": "yunus",
-    "judul": "Nabi Yunus & Ikan Besar",
-    "status": "selesai",
-    "catatan": "Diproduksi 3 Nov 2026 (jalan manual). Video 06:15 + 2 Shorts sudah dirender & disimpan di repo privat rilis/2026-11-07/. Tayang otomatis tanpa approval (keputusan Kakak 3 Nov). Unggah YouTube tertunda quotaExceeded; dikerjakan tugas 'Upload YouTube harian'. Cek: naskah ke ustadz, lafal doa, sinkron subtitle (timing kata perkiraan), SFX ombak/badai berulang. Long diunggah 4 Nov 15.03 WIB (private, made for kids, publishAt 16.30 WIB terverifikasi); tanpa thumbnail kustom (tidak ada file). Short1/short2 dijadwalkan 5 & 6 Nov. 5 Nov 15.05 WIB: Short1 diunggah private (ID qZAhCNzQD5c); publishAt & made-for-kids tidak bisa diset via tool Composio (hanya akun default yang bisa dipakai API mentah) — diubah ke public manual/otomatis sekitar 16.30 WIB; cek status 'dibuat untuk anak' di Studio. 5 Nov 16.30 WIB: GAGAL otomatis mempublikasikan Short1 (qZAhCNzQD5c masih PRIVATE; tool Composio tidak bisa mengakses video private & tidak bisa set publishAt/made-for-kids). Menunggu Kakak: buka YouTube Studio, set 'dibuat untuk anak-anak' lalu Publik. Short1 IG tayang 5 Nov 16.31 WIB oleh sesi posting. 5 Nov malam: Short1 YouTube (qZAhCNzQD5c) 'Upload gagal: tidak dapat memproses file' (tab Video, bukan Shorts). Keputusan Kakak: 6 Nov unggah ulang short-1.mp4 bersama Short2 (hapus entri gagal dulu; ganti youtube.short1 dengan ID baru). 6 Nov: Short2 IG gagal 16.30 WIB (token chiral-havage invalid, OAuth 190); akun disambung ulang Kakak, Short2 IG tayang 6 Nov 20.59 WIB oleh sesi posting. 6 Nov 15.0x WIB: Short1 (entri gagal qZAhCNzQD5c diganti) & Short2 diunggah, private (ID TfQYC2T8rZw & oF4YBBFmqJ4), kategori 27, tanpa thumbnail kustom. publishAt & 'dibuat untuk anak' tidak bisa diset via tool Composio; Kakak set 'dibuat untuk anak' & mempublikasikan Short1/Short2 manual 6 Nov (terverifikasi public, madeForKids=true). Entri gagal qZAhCNzQD5c: cek/hapus manual di Studio. Reels Short2 menunggu sesi posting 16.30.",
-    "tayang": {
-      "long": "2026-11-04T16:30+07:00",
-      "short1": "2026-11-05T16:30+07:00",
-      "short2": "2026-11-06T16:30+07:00"
-    },
-    "shorts": [
-      "Short-yunus-1-kegelapan",
-      "Short-yunus-2-doa"
-    ],
-    "youtube": {
-      "long": "-g7Z4Hlv6hM",
-      "short1": "TfQYC2T8rZw",
-      "short2": "oF4YBBFmqJ4"
-    },
-    "instagram": {
-      "short1": {
-        "media_id": "18042265532836179",
-        "permalink": "https://www.instagram.com/reel/DfWttEHldh7/",
-        "waktu_tayang": "2026-11-05T16:31:11+07:00",
-        "akun_composio": "instagram_chiral-havage"
-      },
-      "short2": {
-        "media_id": "18113416316216924",
-        "permalink": "https://www.instagram.com/reel/DfZxNeBFI3w/",
-        "waktu_tayang": "2026-11-06T20:59:45+07:00",
-        "akun_composio": "instagram_chiral-havage"
-      }
-    },
-    "rilis_dir": "rilis/2026-11-07",
-    "youtube_status": {
-      "long": "public, untuk anak",
-      "short1": "public, untuk anak (manual oleh Kakak, 6 Nov 2026)",
-      "short2": "public, untuk anak (manual oleh Kakak, 6 Nov 2026)"
-    }
+  "shorts": [
+   "Short-sulaiman-1-semut-peduli",
+   "Short-sulaiman-2-doa"
+  ],
+  "youtube": {
+   "long": "MbDB9XX9Nxs",
+   "short1": "jE6HxKek1OU",
+   "short2": "iAGqJaZo6NQ"
   },
-  {
-    "paket": 3,
-    "kisah": "nuh",
-    "judul": "Nabi Nuh & Kapal Besar",
-    "status": "selesai",
-    "catatan": "STATUS TERBARU: 10 Nov 2026 19.01.24 WIB (Codex), Reels Short2 terbit terverifikasi (media_id 17912838807312123); YouTube Short2 cymqzfVXMok sudah public, processed dan dibuat untuk anak; seluruh Paket 3 selesai, Reels Short1 tetap terverifikasi pada catatan sebelumnya. Riwayat: STATUS TERBARU: 10 Nov 2026 16.30.16 WIB (Codex), Reels Short1 terbit terverifikasi (media_id 18359773417168515); YouTube Short1 wPuijmD8Ep4 sudah public dan dibuat untuk anak, Short2 cymqzfVXMok masih private terjadwal 10 Nov 19.00 WIB menurut API, Reels Short2 belum terbit. Riwayat: STATUS TERBARU: 9 Nov 2026 malam, Kakak mengunggah manual Short1 (wPuijmD8Ep4) dan Short2 (cymqzfVXMok) ke YouTube Ghu Berkisah: private, dibuat untuk anak, terjadwal tayang Short1 10 Nov 16.29 WIB dan Short2 11 Nov 19.00 WIB (terverifikasi via API; jam tayang di kolom tayang disesuaikan dengan kenyataan). Long QHovQCeI1fc sudah PUBLIC dan dibuat untuk anak. Reels Instagram Short1/Short2 BELUM diposting. Riwayat: QS. Hud: 25–49, QS. Nuh. Diproduksi 7 Nov 2026 (sesi terjadwal). Video 05:36 + 2 Shorts (86 dtk & 96 dtk) di repo privat rilis/2026-11-07-nuh/ (folder -nuh karena rilis/2026-11-07 sudah dipakai paket Yunus). Dalil dari Al-Qur'an + HR. Bukhari 3340/Muslim 194; makna 'tanur' disebut khilaf ulama tafsir di naskah. Cek: naskah ke ustadz, lafal doa Hud:41, timing subtitle dari jeda suara (bukan Scribe), tanpa thumbnail kustom. 7 Nov 15.03 WIB: Long diunggah ke Ghu Berkisah (ID QHovQCeI1fc), PRIVATE, kategori 27, tanpa thumbnail kustom. publishAt & 'dibuat untuk anak' TIDAK bisa diset via tool Composio (proxy 403 untuk akun non-default) — menunggu Kakak di YouTube Studio: set 'dibuat untuk anak-anak' lalu Publik/jadwalkan 16.30 WIB.",
-    "tayang": {
-      "long": "2026-11-07T16:30+07:00",
-      "short1": "2026-11-10T16:29+07:00",
-      "short2": "2026-11-10T19:00+07:00"
-    },
-    "shorts": [
-      "Short-nuh-1-kapal",
-      "Short-nuh-2-doa"
-    ],
-    "youtube": {
-      "long": "QHovQCeI1fc",
-      "short1": "wPuijmD8Ep4",
-      "short2": "cymqzfVXMok"
-    },
-    "instagram": {
-      "short1": {
-        "media_id": "18359773417168515",
-        "permalink": "https://www.instagram.com/reel/DfjjsztCK6_/",
-        "waktu_tayang": "2026-11-10T16:30:16+07:00",
-        "akun_composio": "instagram_chiral-havage"
-      },
-      "short2": {
-        "media_id": "17912838807312123",
-        "permalink": "https://www.instagram.com/reel/Dfj1UBiCCwe/",
-        "waktu_tayang": "2026-11-10T19:01:24+07:00",
-        "akun_composio": "instagram_chiral-havage"
-      }
-    },
-    "rilis_dir": "rilis/2026-11-07-nuh",
-    "youtube_status": {
-      "short2": "public, processed, dibuat untuk anak (terverifikasi Codex 10 Nov 2026 19.01 WIB)"
-    }
+  "instagram": {
+   "short1": {
+    "media_id": "18127111153923175",
+    "permalink": "https://www.instagram.com/reel/DfL6n5CinW9/",
+    "waktu_tayang": "2026-11-01T11:52:53+07:00",
+    "akun_composio": "instagram_chiral-havage"
+   },
+   "short2": {
+    "media_id": "18656906011001735",
+    "permalink": "https://www.instagram.com/reel/DfUFJRwjLj6/",
+    "waktu_tayang": "2026-11-04T15:58:16+07:00",
+    "akun_composio": "instagram_chiral-havage"
+   }
   },
-  {
-    "paket": 4,
-    "kisah": "ibrahim-api",
-    "judul": "Nabi Ibrahim & Api yang Dingin",
-    "status": "selesai",
-    "catatan": "STATUS TERBARU: 13 Nov 2026 16.30 WIB (Claude), Short2 dgKaqKRcryU (processed) dan Short1 PaVBRl6y6C4 masih PRIVATE dengan madeForKids=false; tidak dibuat Publik otomatis agar tidak tayang tanpa tanda 'dibuat untuk anak'. Menunggu Kakak di YouTube Studio: 'Ya, dibuat untuk anak-anak' lalu Publik. Riwayat: STATUS TERBARU: 13 Nov 2026 15.0x WIB (Claude, sesi terjadwal), Short2 diunggah ke Ghu Berkisah (ID dgKaqKRcryU, sha256 cocok) sebagai PRIVATE, kategori 27, tanpa thumbnail kustom (tidak ada file). publishAt & 'dibuat untuk anak' tetap tidak bisa diset lewat tool Composio (proxy memakai akun default Riwayat Benda), madeForKids=false. Long 5BGCr21ULzs sudah PUBLIC & dibuat untuk anak (terverifikasi API). Short1 PaVBRl6y6C4 masih PRIVATE, madeForKids=false. Menunggu Kakak di YouTube Studio untuk Short1 & Short2: 'Ya, dibuat untuk anak-anak' lalu Publik/Jadwalkan 16.30 WIB; sesi ini memeriksa lagi pukul 16.30 dan hanya membuat Publik bila madeForKids sudah true. Reels Short2 menunggu sesi posting 16.30. Riwayat: STATUS TERBARU: 12 Nov 2026 16.31 WIB (Claude), Short1 PaVBRl6y6C4 (processed) dan long 5BGCr21ULzs masih PRIVATE dengan madeForKids=false; tidak dibuat Publik otomatis agar tidak tayang tanpa tanda 'dibuat untuk anak'. Menunggu Kakak di YouTube Studio: 'Ya, dibuat untuk anak-anak' lalu Publik. Riwayat: 12 Nov 2026 15.04 WIB (Claude, sesi terjadwal), Short1 diunggah ke Ghu Berkisah (ID PaVBRl6y6C4, sha256 cocok) sebagai PRIVATE, kategori 27, tanpa thumbnail kustom (tidak ada file). publishAt & 'dibuat untuk anak' tetap tidak bisa diset lewat tool Composio (madeForKids=false menurut API). Long 5BGCr21ULzs masih PRIVATE, madeForKids=false. Menunggu Kakak di YouTube Studio untuk kedua video: 'Ya, dibuat untuk anak-anak' lalu Publik/Jadwalkan 16.30 WIB; sesi ini memeriksa lagi pukul 16.30 dan hanya membuat Publik bila madeForKids sudah true. Riwayat: 11 Nov 2026 16.30 WIB (Claude), long 5BGCr21ULzs masih PRIVATE dan madeForKids=false (sudah processed); tidak dibuat Publik otomatis agar tidak tayang tanpa tanda 'dibuat untuk anak'. Menunggu Kakak di YouTube Studio: 'Ya, dibuat untuk anak-anak' lalu Publik. Riwayat: 11 Nov 2026 15.10 WIB (Claude, sesi terjadwal), long diunggah ke Ghu Berkisah (ID 5BGCr21ULzs, sha256 cocok) sebagai PRIVATE, kategori 27, tanpa thumbnail kustom; publishAt & 'dibuat untuk anak' tidak bisa diset lewat tool Composio akun youtube_repic-eking (YOUTUBE_UPDATE_VIDEO tidak punya field itu; proxy hanya memakai akun default lain), madeForKids=false menurut API. Menunggu Kakak di YouTube Studio: set 'Ya, dibuat untuk anak-anak' lalu Jadwalkan 16.30 WIB; sesi ini memeriksa lagi pukul 16.30 dan hanya membuat Publik bila madeForKids sudah true. Short1/Short2 belum diunggah. Riwayat: QS. Al-Anbiya: 51–71, Ash-Shaffat: 95–98. Diproduksi 11 Nov 2026 12.00–12.25 WIB (Claude, sesi terjadwal). Video 06:34 + 2 Shorts (84 dtk & 84 dtk) di repo privat rilis/2026-11-11/ (long dipecah 3 bagian, sha256 di sha256.txt). Dalil: Al-Qur'an + HR. Bukhari no. 4563 (Ibnu Abbas: 'hasbunallah wa ni'mal wakil' diucapkan Nabi Ibrahim saat dilemparkan ke api); tujuan ucapan 'patung besar itulah yang melakukannya' disebut terang sebagai penjelasan ulama tafsir. Patung digambar batu polos tanpa wajah. Cek: naskah ke ustadz, lafal 'Yaa naaru kuunii bardan wa salaaman' & 'Hasbunallaah wa ni'mal wakiil', timing subtitle dari jeda suara (bukan Scribe), tanpa thumbnail kustom. Belum diunggah; menunggu tugas 'Upload YouTube harian' 15.01 WIB.",
-    "tayang": {
-      "long": "2026-11-11T16:30+07:00",
-      "short1": "2026-11-12T16:30+07:00",
-      "short2": "2026-11-13T16:30+07:00"
-    },
-    "shorts": [
-      "Short-ibrahim-api-1-api-dingin",
-      "Short-ibrahim-api-2-tawakal"
-    ],
-    "youtube": {
-      "long": "5BGCr21ULzs",
-      "short1": "PaVBRl6y6C4",
-      "short2": "dgKaqKRcryU"
-    },
-    "instagram": {
-      "short1": {
-        "media_id": "18021758210974386",
-        "permalink": "https://www.instagram.com/reel/DfovDMsDla6/",
-        "waktu_tayang": "2026-11-12T16:30:12+07:00",
-        "akun_composio": "instagram_chiral-havage"
-      },
-      "short2": {
-        "media_id": "17984690571101992",
-        "permalink": "https://www.instagram.com/reel/DfrT1qElCNz/",
-        "waktu_tayang": "2026-11-13T16:30:08+07:00",
-        "akun_composio": "instagram_chiral-havage"
-      }
-    },
-    "rilis_dir": "rilis/2026-11-11"
-  },
-  {
-    "paket": 5,
-    "kisah": "ibrahim-ismail",
-    "judul": "Nabi Ibrahim, Ismail & Ketaatan",
-    "status": "tayang_long",
-    "catatan": "STATUS TERBARU: 14 Nov 2026 15.0x WIB (Claude, sesi terjadwal), long diunggah ke Ghu Berkisah (ID wkX3V3HTFOU, sha256 cocok) sebagai PRIVATE, kategori 27, judul/deskripsi/tag dari youtube-meta.json, tanpa thumbnail kustom (tidak ada file). publishAt & 'dibuat untuk anak' tetap tidak bisa diset lewat tool Composio (madeForKids=false menurut API). Menunggu Kakak di YouTube Studio: 'Ya, dibuat untuk anak-anak' lalu Jadwalkan 16.30 WIB; sesi ini memeriksa lagi pukul 16.30 dan hanya membuat Publik bila madeForKids sudah true. Riwayat: QS. Ash-Shaffat: 99–112, Al-Anbiya: 71, Al-Hajj: 37. Diproduksi 14 Nov 2026 11.53–12.15 WIB (Claude, sesi terjadwal). Video 05:56 + 2 Shorts (77 dtk & 79 dtk) di repo privat rilis/2026-11-14/ (long dipecah 5 bagian, sha256 di sha256.txt). Tiga hal disebut terang sebagai penjelasan ulama tafsir: anak itu Ismail (dalil ayat 112), mimpi para nabi adalah wahyu, sembelihan yang besar = domba. Tanpa adegan penyembelihan/pisau; visual: padang pasir, jejak kaki, tenda, langit malam, bukit fajar, cahaya, domba. Cek: naskah ke ustadz, lafal 'Rabbi hab lii minash shaalihiin' & 'Salaamun 'alaa ibraahiim', timing subtitle dari jeda suara (bukan Scribe), tanpa thumbnail kustom. Belum diunggah; menunggu tugas 'Upload YouTube harian' 15.01 WIB.",
-    "tayang": {
-      "long": "2026-11-14T16:30+07:00",
-      "short1": "2026-11-15T16:30+07:00",
-      "short2": "2026-11-16T16:30+07:00"
-    },
-    "shorts": [
-      "Short-ibrahim-ismail-1-anak-sabar",
-      "Short-ibrahim-ismail-2-doa"
-    ],
-    "youtube": {
-      "long": "wkX3V3HTFOU"
-    },
-    "instagram": {},
-    "rilis_dir": "rilis/2026-11-14"
-  },
-  {
-    "paket": 6,
-    "kisah": "musa-laut",
-    "judul": "Nabi Musa & Laut yang Terbelah",
-    "status": "antri",
-    "catatan": "QS. Asy-Syu'ara: 52–68",
-    "tayang": {
-      "long": "2026-11-18T16:30+07:00",
-      "short1": "2026-11-19T16:30+07:00",
-      "short2": "2026-11-20T16:30+07:00"
-    },
-    "shorts": [],
-    "youtube": {},
-    "instagram": {}
-  },
-  {
-    "paket": 7,
-    "kisah": "musa-khidir",
-    "judul": "Nabi Musa & Nabi Khidir",
-    "status": "antri",
-    "catatan": "QS. Al-Kahfi: 60–82, HR. Bukhari & Muslim",
-    "tayang": {
-      "long": "2026-11-21T16:30+07:00",
-      "short1": "2026-11-22T16:30+07:00",
-      "short2": "2026-11-23T16:30+07:00"
-    },
-    "shorts": [],
-    "youtube": {},
-    "instagram": {}
-  },
-  {
-    "paket": 8,
-    "kisah": "yusuf",
-    "judul": "Nabi Yusuf & Mimpi yang Indah",
-    "status": "antri",
-    "catatan": "QS. Yusuf",
-    "tayang": {
-      "long": "2026-11-25T16:30+07:00",
-      "short1": "2026-11-26T16:30+07:00",
-      "short2": "2026-11-27T16:30+07:00"
-    },
-    "shorts": [],
-    "youtube": {},
-    "instagram": {}
-  },
-  {
-    "paket": 9,
-    "kisah": "ayyub",
-    "judul": "Nabi Ayyub yang Sangat Sabar",
-    "status": "antri",
-    "catatan": "QS. Al-Anbiya: 83–84, Shad: 41–44",
-    "tayang": {
-      "long": "2026-11-28T16:30+07:00",
-      "short1": "2026-11-29T16:30+07:00",
-      "short2": "2026-11-30T16:30+07:00"
-    },
-    "shorts": [],
-    "youtube": {},
-    "instagram": {}
-  },
-  {
-    "paket": 10,
-    "kisah": "sulaiman-hudhud",
-    "judul": "Nabi Sulaiman & Burung Hud-hud",
-    "status": "antri",
-    "catatan": "QS. An-Naml: 20–44",
-    "tayang": {
-      "long": "2026-12-02T16:30+07:00",
-      "short1": "2026-12-03T16:30+07:00",
-      "short2": "2026-12-04T16:30+07:00"
-    },
-    "shorts": [],
-    "youtube": {},
-    "instagram": {}
-  },
-  {
-    "paket": 11,
-    "kisah": "dawud",
-    "judul": "Nabi Dawud & Jalut",
-    "status": "antri",
-    "catatan": "QS. Al-Baqarah: 249–251",
-    "tayang": {
-      "long": "2026-12-05T16:30+07:00",
-      "short1": "2026-12-06T16:30+07:00",
-      "short2": "2026-12-07T16:30+07:00"
-    },
-    "shorts": [],
-    "youtube": {},
-    "instagram": {}
+  "youtube_status": {
+   "short1": "public (dipublikasikan manual oleh Kakak, 3 Nov 2026)",
+   "short2": "public (dipublikasikan manual oleh Kakak, 3 Nov 2026)"
   }
+ },
+ {
+  "paket": 2,
+  "kisah": "yunus",
+  "judul": "Nabi Yunus & Ikan Besar",
+  "status": "selesai",
+  "catatan": "Diproduksi 3 Nov 2026 (jalan manual). Video 06:15 + 2 Shorts sudah dirender & disimpan di repo privat rilis/2026-11-07/. Tayang otomatis tanpa approval (keputusan Kakak 3 Nov). Unggah YouTube tertunda quotaExceeded; dikerjakan tugas 'Upload YouTube harian'. Cek: naskah ke ustadz, lafal doa, sinkron subtitle (timing kata perkiraan), SFX ombak/badai berulang. Long diunggah 4 Nov 15.03 WIB (private, made for kids, publishAt 16.30 WIB terverifikasi); tanpa thumbnail kustom (tidak ada file). Short1/short2 dijadwalkan 5 & 6 Nov. 5 Nov 15.05 WIB: Short1 diunggah private (ID qZAhCNzQD5c); publishAt & made-for-kids tidak bisa diset via tool Composio (hanya akun default yang bisa dipakai API mentah) — diubah ke public manual/otomatis sekitar 16.30 WIB; cek status 'dibuat untuk anak' di Studio. 5 Nov 16.30 WIB: GAGAL otomatis mempublikasikan Short1 (qZAhCNzQD5c masih PRIVATE; tool Composio tidak bisa mengakses video private & tidak bisa set publishAt/made-for-kids). Menunggu Kakak: buka YouTube Studio, set 'dibuat untuk anak-anak' lalu Publik. Short1 IG tayang 5 Nov 16.31 WIB oleh sesi posting. 5 Nov malam: Short1 YouTube (qZAhCNzQD5c) 'Upload gagal: tidak dapat memproses file' (tab Video, bukan Shorts). Keputusan Kakak: 6 Nov unggah ulang short-1.mp4 bersama Short2 (hapus entri gagal dulu; ganti youtube.short1 dengan ID baru). 6 Nov: Short2 IG gagal 16.30 WIB (token chiral-havage invalid, OAuth 190); akun disambung ulang Kakak, Short2 IG tayang 6 Nov 20.59 WIB oleh sesi posting. 6 Nov 15.0x WIB: Short1 (entri gagal qZAhCNzQD5c diganti) & Short2 diunggah, private (ID TfQYC2T8rZw & oF4YBBFmqJ4), kategori 27, tanpa thumbnail kustom. publishAt & 'dibuat untuk anak' tidak bisa diset via tool Composio; Kakak set 'dibuat untuk anak' & mempublikasikan Short1/Short2 manual 6 Nov (terverifikasi public, madeForKids=true). Entri gagal qZAhCNzQD5c: cek/hapus manual di Studio. Reels Short2 menunggu sesi posting 16.30.",
+  "tayang": {
+   "long": "2026-11-04T16:30+07:00",
+   "short1": "2026-11-05T16:30+07:00",
+   "short2": "2026-11-06T16:30+07:00"
+  },
+  "shorts": [
+   "Short-yunus-1-kegelapan",
+   "Short-yunus-2-doa"
+  ],
+  "youtube": {
+   "long": "-g7Z4Hlv6hM",
+   "short1": "TfQYC2T8rZw",
+   "short2": "oF4YBBFmqJ4"
+  },
+  "instagram": {
+   "short1": {
+    "media_id": "18042265532836179",
+    "permalink": "https://www.instagram.com/reel/DfWttEHldh7/",
+    "waktu_tayang": "2026-11-05T16:31:11+07:00",
+    "akun_composio": "instagram_chiral-havage"
+   },
+   "short2": {
+    "media_id": "18113416316216924",
+    "permalink": "https://www.instagram.com/reel/DfZxNeBFI3w/",
+    "waktu_tayang": "2026-11-06T20:59:45+07:00",
+    "akun_composio": "instagram_chiral-havage"
+   }
+  },
+  "rilis_dir": "rilis/2026-11-07",
+  "youtube_status": {
+   "long": "public, untuk anak",
+   "short1": "public, untuk anak (manual oleh Kakak, 6 Nov 2026)",
+   "short2": "public, untuk anak (manual oleh Kakak, 6 Nov 2026)"
+  }
+ },
+ {
+  "paket": 3,
+  "kisah": "nuh",
+  "judul": "Nabi Nuh & Kapal Besar",
+  "status": "selesai",
+  "catatan": "STATUS TERBARU: 10 Nov 2026 19.01.24 WIB (Codex), Reels Short2 terbit terverifikasi (media_id 17912838807312123); YouTube Short2 cymqzfVXMok sudah public, processed dan dibuat untuk anak; seluruh Paket 3 selesai, Reels Short1 tetap terverifikasi pada catatan sebelumnya. Riwayat: STATUS TERBARU: 10 Nov 2026 16.30.16 WIB (Codex), Reels Short1 terbit terverifikasi (media_id 18359773417168515); YouTube Short1 wPuijmD8Ep4 sudah public dan dibuat untuk anak, Short2 cymqzfVXMok masih private terjadwal 10 Nov 19.00 WIB menurut API, Reels Short2 belum terbit. Riwayat: STATUS TERBARU: 9 Nov 2026 malam, Kakak mengunggah manual Short1 (wPuijmD8Ep4) dan Short2 (cymqzfVXMok) ke YouTube Ghu Berkisah: private, dibuat untuk anak, terjadwal tayang Short1 10 Nov 16.29 WIB dan Short2 11 Nov 19.00 WIB (terverifikasi via API; jam tayang di kolom tayang disesuaikan dengan kenyataan). Long QHovQCeI1fc sudah PUBLIC dan dibuat untuk anak. Reels Instagram Short1/Short2 BELUM diposting. Riwayat: QS. Hud: 25–49, QS. Nuh. Diproduksi 7 Nov 2026 (sesi terjadwal). Video 05:36 + 2 Shorts (86 dtk & 96 dtk) di repo privat rilis/2026-11-07-nuh/ (folder -nuh karena rilis/2026-11-07 sudah dipakai paket Yunus). Dalil dari Al-Qur'an + HR. Bukhari 3340/Muslim 194; makna 'tanur' disebut khilaf ulama tafsir di naskah. Cek: naskah ke ustadz, lafal doa Hud:41, timing subtitle dari jeda suara (bukan Scribe), tanpa thumbnail kustom. 7 Nov 15.03 WIB: Long diunggah ke Ghu Berkisah (ID QHovQCeI1fc), PRIVATE, kategori 27, tanpa thumbnail kustom. publishAt & 'dibuat untuk anak' TIDAK bisa diset via tool Composio (proxy 403 untuk akun non-default) — menunggu Kakak di YouTube Studio: set 'dibuat untuk anak-anak' lalu Publik/jadwalkan 16.30 WIB.",
+  "tayang": {
+   "long": "2026-11-07T16:30+07:00",
+   "short1": "2026-11-10T16:29+07:00",
+   "short2": "2026-11-10T19:00+07:00"
+  },
+  "shorts": [
+   "Short-nuh-1-kapal",
+   "Short-nuh-2-doa"
+  ],
+  "youtube": {
+   "long": "QHovQCeI1fc",
+   "short1": "wPuijmD8Ep4",
+   "short2": "cymqzfVXMok"
+  },
+  "instagram": {
+   "short1": {
+    "media_id": "18359773417168515",
+    "permalink": "https://www.instagram.com/reel/DfjjsztCK6_/",
+    "waktu_tayang": "2026-11-10T16:30:16+07:00",
+    "akun_composio": "instagram_chiral-havage"
+   },
+   "short2": {
+    "media_id": "17912838807312123",
+    "permalink": "https://www.instagram.com/reel/Dfj1UBiCCwe/",
+    "waktu_tayang": "2026-11-10T19:01:24+07:00",
+    "akun_composio": "instagram_chiral-havage"
+   }
+  },
+  "rilis_dir": "rilis/2026-11-07-nuh",
+  "youtube_status": {
+   "short2": "public, processed, dibuat untuk anak (terverifikasi Codex 10 Nov 2026 19.01 WIB)"
+  }
+ },
+ {
+  "paket": 4,
+  "kisah": "ibrahim-api",
+  "judul": "Nabi Ibrahim & Api yang Dingin",
+  "status": "selesai",
+  "catatan": "STATUS TERBARU: 13 Nov 2026 16.30 WIB (Claude), Short2 dgKaqKRcryU (processed) dan Short1 PaVBRl6y6C4 masih PRIVATE dengan madeForKids=false; tidak dibuat Publik otomatis agar tidak tayang tanpa tanda 'dibuat untuk anak'. Menunggu Kakak di YouTube Studio: 'Ya, dibuat untuk anak-anak' lalu Publik. Riwayat: STATUS TERBARU: 13 Nov 2026 15.0x WIB (Claude, sesi terjadwal), Short2 diunggah ke Ghu Berkisah (ID dgKaqKRcryU, sha256 cocok) sebagai PRIVATE, kategori 27, tanpa thumbnail kustom (tidak ada file). publishAt & 'dibuat untuk anak' tetap tidak bisa diset lewat tool Composio (proxy memakai akun default Riwayat Benda), madeForKids=false. Long 5BGCr21ULzs sudah PUBLIC & dibuat untuk anak (terverifikasi API). Short1 PaVBRl6y6C4 masih PRIVATE, madeForKids=false. Menunggu Kakak di YouTube Studio untuk Short1 & Short2: 'Ya, dibuat untuk anak-anak' lalu Publik/Jadwalkan 16.30 WIB; sesi ini memeriksa lagi pukul 16.30 dan hanya membuat Publik bila madeForKids sudah true. Reels Short2 menunggu sesi posting 16.30. Riwayat: STATUS TERBARU: 12 Nov 2026 16.31 WIB (Claude), Short1 PaVBRl6y6C4 (processed) dan long 5BGCr21ULzs masih PRIVATE dengan madeForKids=false; tidak dibuat Publik otomatis agar tidak tayang tanpa tanda 'dibuat untuk anak'. Menunggu Kakak di YouTube Studio: 'Ya, dibuat untuk anak-anak' lalu Publik. Riwayat: 12 Nov 2026 15.04 WIB (Claude, sesi terjadwal), Short1 diunggah ke Ghu Berkisah (ID PaVBRl6y6C4, sha256 cocok) sebagai PRIVATE, kategori 27, tanpa thumbnail kustom (tidak ada file). publishAt & 'dibuat untuk anak' tetap tidak bisa diset lewat tool Composio (madeForKids=false menurut API). Long 5BGCr21ULzs masih PRIVATE, madeForKids=false. Menunggu Kakak di YouTube Studio untuk kedua video: 'Ya, dibuat untuk anak-anak' lalu Publik/Jadwalkan 16.30 WIB; sesi ini memeriksa lagi pukul 16.30 dan hanya membuat Publik bila madeForKids sudah true. Riwayat: 11 Nov 2026 16.30 WIB (Claude), long 5BGCr21ULzs masih PRIVATE dan madeForKids=false (sudah processed); tidak dibuat Publik otomatis agar tidak tayang tanpa tanda 'dibuat untuk anak'. Menunggu Kakak di YouTube Studio: 'Ya, dibuat untuk anak-anak' lalu Publik. Riwayat: 11 Nov 2026 15.10 WIB (Claude, sesi terjadwal), long diunggah ke Ghu Berkisah (ID 5BGCr21ULzs, sha256 cocok) sebagai PRIVATE, kategori 27, tanpa thumbnail kustom; publishAt & 'dibuat untuk anak' tidak bisa diset lewat tool Composio akun youtube_repic-eking (YOUTUBE_UPDATE_VIDEO tidak punya field itu; proxy hanya memakai akun default lain), madeForKids=false menurut API. Menunggu Kakak di YouTube Studio: set 'Ya, dibuat untuk anak-anak' lalu Jadwalkan 16.30 WIB; sesi ini memeriksa lagi pukul 16.30 dan hanya membuat Publik bila madeForKids sudah true. Short1/Short2 belum diunggah. Riwayat: QS. Al-Anbiya: 51–71, Ash-Shaffat: 95–98. Diproduksi 11 Nov 2026 12.00–12.25 WIB (Claude, sesi terjadwal). Video 06:34 + 2 Shorts (84 dtk & 84 dtk) di repo privat rilis/2026-11-11/ (long dipecah 3 bagian, sha256 di sha256.txt). Dalil: Al-Qur'an + HR. Bukhari no. 4563 (Ibnu Abbas: 'hasbunallah wa ni'mal wakil' diucapkan Nabi Ibrahim saat dilemparkan ke api); tujuan ucapan 'patung besar itulah yang melakukannya' disebut terang sebagai penjelasan ulama tafsir. Patung digambar batu polos tanpa wajah. Cek: naskah ke ustadz, lafal 'Yaa naaru kuunii bardan wa salaaman' & 'Hasbunallaah wa ni'mal wakiil', timing subtitle dari jeda suara (bukan Scribe), tanpa thumbnail kustom. Belum diunggah; menunggu tugas 'Upload YouTube harian' 15.01 WIB.",
+  "tayang": {
+   "long": "2026-11-11T16:30+07:00",
+   "short1": "2026-11-12T16:30+07:00",
+   "short2": "2026-11-13T16:30+07:00"
+  },
+  "shorts": [
+   "Short-ibrahim-api-1-api-dingin",
+   "Short-ibrahim-api-2-tawakal"
+  ],
+  "youtube": {
+   "long": "5BGCr21ULzs",
+   "short1": "PaVBRl6y6C4",
+   "short2": "dgKaqKRcryU"
+  },
+  "instagram": {
+   "short1": {
+    "media_id": "18021758210974386",
+    "permalink": "https://www.instagram.com/reel/DfovDMsDla6/",
+    "waktu_tayang": "2026-11-12T16:30:12+07:00",
+    "akun_composio": "instagram_chiral-havage"
+   },
+   "short2": {
+    "media_id": "17984690571101992",
+    "permalink": "https://www.instagram.com/reel/DfrT1qElCNz/",
+    "waktu_tayang": "2026-11-13T16:30:08+07:00",
+    "akun_composio": "instagram_chiral-havage"
+   }
+  },
+  "rilis_dir": "rilis/2026-11-11"
+ },
+ {
+  "paket": 5,
+  "kisah": "ibrahim-ismail",
+  "judul": "Nabi Ibrahim, Ismail & Ketaatan",
+  "status": "tayang_long",
+  "catatan": "STATUS TERBARU: 14 Nov 2026 15.0x WIB (Claude, sesi terjadwal), long diunggah ke Ghu Berkisah (ID wkX3V3HTFOU, sha256 cocok) sebagai PRIVATE, kategori 27, judul/deskripsi/tag dari youtube-meta.json, tanpa thumbnail kustom (tidak ada file). publishAt & 'dibuat untuk anak' tetap tidak bisa diset lewat tool Composio (madeForKids=false menurut API). Menunggu Kakak di YouTube Studio: 'Ya, dibuat untuk anak-anak' lalu Jadwalkan 16.30 WIB; sesi ini memeriksa lagi pukul 16.30 dan hanya membuat Publik bila madeForKids sudah true. Riwayat: QS. Ash-Shaffat: 99–112, Al-Anbiya: 71, Al-Hajj: 37. Diproduksi 14 Nov 2026 11.53–12.15 WIB (Claude, sesi terjadwal). Video 05:56 + 2 Shorts (77 dtk & 79 dtk) di repo privat rilis/2026-11-14/ (long dipecah 5 bagian, sha256 di sha256.txt). Tiga hal disebut terang sebagai penjelasan ulama tafsir: anak itu Ismail (dalil ayat 112), mimpi para nabi adalah wahyu, sembelihan yang besar = domba. Tanpa adegan penyembelihan/pisau; visual: padang pasir, jejak kaki, tenda, langit malam, bukit fajar, cahaya, domba. Cek: naskah ke ustadz, lafal 'Rabbi hab lii minash shaalihiin' & 'Salaamun 'alaa ibraahiim', timing subtitle dari jeda suara (bukan Scribe), tanpa thumbnail kustom. Belum diunggah; menunggu tugas 'Upload YouTube harian' 15.01 WIB.",
+  "tayang": {
+   "long": "2026-11-14T16:30+07:00",
+   "short1": "2026-11-15T16:30+07:00",
+   "short2": "2026-11-16T16:30+07:00"
+  },
+  "shorts": [
+   "Short-ibrahim-ismail-1-anak-sabar",
+   "Short-ibrahim-ismail-2-doa"
+  ],
+  "youtube": {
+   "long": "wkX3V3HTFOU"
+  },
+  "instagram": {},
+  "rilis_dir": "rilis/2026-11-14"
+ },
+ {
+  "paket": 6,
+  "kisah": "musa-laut",
+  "judul": "Nabi Musa & Laut yang Terbelah",
+  "status": "antri",
+  "catatan": "QS. Asy-Syu'ara: 52–68",
+  "tayang": {
+   "long": "2026-11-18T16:30+07:00",
+   "short1": "2026-11-19T16:30+07:00",
+   "short2": "2026-11-20T16:30+07:00"
+  },
+  "shorts": [],
+  "youtube": {},
+  "instagram": {}
+ },
+ {
+  "paket": 7,
+  "kisah": "musa-khidir",
+  "judul": "Nabi Musa & Nabi Khidir",
+  "status": "antri",
+  "catatan": "QS. Al-Kahfi: 60–82, HR. Bukhari & Muslim",
+  "tayang": {
+   "long": "2026-11-21T16:30+07:00",
+   "short1": "2026-11-22T16:30+07:00",
+   "short2": "2026-11-23T16:30+07:00"
+  },
+  "shorts": [],
+  "youtube": {},
+  "instagram": {}
+ },
+ {
+  "paket": 8,
+  "kisah": "yusuf",
+  "judul": "Nabi Yusuf & Mimpi yang Indah",
+  "status": "antri",
+  "catatan": "QS. Yusuf",
+  "tayang": {
+   "long": "2026-11-25T16:30+07:00",
+   "short1": "2026-11-26T16:30+07:00",
+   "short2": "2026-11-27T16:30+07:00"
+  },
+  "shorts": [],
+  "youtube": {},
+  "instagram": {}
+ },
+ {
+  "paket": 9,
+  "kisah": "ayyub",
+  "judul": "Nabi Ayyub yang Sangat Sabar",
+  "status": "antri",
+  "catatan": "QS. Al-Anbiya: 83–84, Shad: 41–44",
+  "tayang": {
+   "long": "2026-11-28T16:30+07:00",
+   "short1": "2026-11-29T16:30+07:00",
+   "short2": "2026-11-30T16:30+07:00"
+  },
+  "shorts": [],
+  "youtube": {},
+  "instagram": {}
+ },
+ {
+  "paket": 10,
+  "kisah": "sulaiman-hudhud",
+  "judul": "Nabi Sulaiman & Burung Hud-hud",
+  "status": "antri",
+  "catatan": "QS. An-Naml: 20–44",
+  "tayang": {
+   "long": "2026-12-02T16:30+07:00",
+   "short1": "2026-12-03T16:30+07:00",
+   "short2": "2026-12-04T16:30+07:00"
+  },
+  "shorts": [],
+  "youtube": {},
+  "instagram": {}
+ },
+ {
+  "paket": 11,
+  "kisah": "dawud",
+  "judul": "Nabi Dawud & Jalut",
+  "status": "antri",
+  "catatan": "QS. Al-Baqarah: 249–251",
+  "tayang": {
+   "long": "2026-12-05T16:30+07:00",
+   "short1": "2026-12-06T16:30+07:00",
+   "short2": "2026-12-07T16:30+07:00"
+  },
+  "shorts": [],
+  "youtube": {},
+  "instagram": {}
+ }
 ]
