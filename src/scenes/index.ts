@@ -23,6 +23,7 @@ import { ShipScene } from "./ShipScene";
 import { ShoreScene } from "./ShoreScene";
 import { ArkBuildScene, FloodScene, JudiScene } from "./ArkScenes";
 import { CityEmptyScene, FireBuildScene, FireScene, IdolsCloseScene, IdolsScene, SkyEarthScene } from "./IbrahimScenes";
+import { CallLightScene, DawnHillsScene, DesertScene, FootprintsScene, NightDreamScene, RamScene, TentScene } from "./IsmailScenes";
 import { StormScene } from "./StormScene";
 import { SwallowScene } from "./SwallowScene";
 
@@ -65,6 +66,15 @@ export const visuals: Record<VisualKey, VisualConfig> = {
   fire: { component: FireScene, avatar: true, captionsLeft: 330 },
   fireBuild: { component: FireBuildScene, avatar: true, captionsLeft: 330 },
   fireCool: { component: FireScene, avatar: true, captionsLeft: 330 },
+  desert: { component: DesertScene, avatar: true, captionsLeft: 330 },
+  footprints: { component: FootprintsScene, avatar: true, captionsLeft: 330 },
+  tent: { component: TentScene, avatar: true, captionsLeft: 330 },
+  tentNight: { component: TentScene, avatar: true, captionsLeft: 330 },
+  tentDawn: { component: TentScene, avatar: true, captionsLeft: 330 },
+  nightDream: { component: NightDreamScene, avatar: true, captionsLeft: 330 },
+  dawnHills: { component: DawnHillsScene, avatar: true, captionsLeft: 330 },
+  callLight: { component: CallLightScene, avatar: true, captionsLeft: 330 },
+  ram: { component: RamScene, avatar: true, captionsLeft: 330 },
   doa: { component: DoaScene, avatar: false, captionsLeft: null },
   shore: { component: ShoreScene, avatar: true, captionsLeft: 330 },
   return: { component: ReturnScene, avatar: true, captionsLeft: 330 },

@@ -40,6 +40,7 @@
     "render:yunus": "remotion render Kisah-yunus out/kisah-nabi-yunus.mp4",
     "render:nuh": "remotion render Kisah-nuh out/kisah-nabi-nuh.mp4",
     "render:ibrahim-api": "remotion render Kisah-ibrahim-api out/kisah-nabi-ibrahim-api.mp4",
+    "render:ibrahim-ismail": "remotion render Kisah-ibrahim-ismail out/kisah-nabi-ibrahim-ismail.mp4",
     "vo:ambil": "bash scripts/ambil-vo.sh"
   },
   "allowScripts": {

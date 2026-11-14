@@ -14,6 +14,7 @@ import { usePhraseFrame } from "../lib/voice";
 import { arabicFont, bodyFont, colors, titleFont } from "../theme";
 import { clamp, type SceneProps } from "./common";
 import { BigFire } from "./IbrahimScenes";
+import { Ram } from "./IsmailScenes";
 
 // Pembuka. Bagian 1: Ghu di kiri, judul di kanan.
 // Bagian 2 (introHook): judul hilang, Ghu berjalan ke kanan, lalu ilustrasi & kartu muncul di kiri.
@@ -223,6 +224,10 @@ export const IntroScene: React.FC<SceneProps> = ({ story }) => {
             <MarchingAnts />
           ) : hook.art === "ark" ? (
             <FloatingArk />
+          ) : hook.art === "ram" ? (
+            <div style={{ position: "absolute", left: 330, top: 470 }}>
+              <Ram size={640} />
+            </div>
           ) : hook.art === "fire" ? (
             <div style={{ position: "absolute", left: 290, top: 380 }}>
               <BigFire width={800} cool={interpolate(frame, [arrived + 60, arrived + 140], [0, 1], clamp)} seed="intro" />
