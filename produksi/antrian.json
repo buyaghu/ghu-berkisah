@@ -158,16 +158,20 @@
   "paket": 5,
   "kisah": "ibrahim-ismail",
   "judul": "Nabi Ibrahim, Ismail & Ketaatan",
-  "status": "antri",
-  "catatan": "QS. As-Saffat: 99–111",
+  "status": "siap_rilis",
+  "catatan": "QS. Ash-Shaffat: 99–112, Al-Anbiya: 71, Al-Hajj: 37. Diproduksi 14 Nov 2026 11.53–12.15 WIB (Claude, sesi terjadwal). Video 05:56 + 2 Shorts (77 dtk & 79 dtk) di repo privat rilis/2026-11-14/ (long dipecah 5 bagian, sha256 di sha256.txt). Tiga hal disebut terang sebagai penjelasan ulama tafsir: anak itu Ismail (dalil ayat 112), mimpi para nabi adalah wahyu, sembelihan yang besar = domba. Tanpa adegan penyembelihan/pisau; visual: padang pasir, jejak kaki, tenda, langit malam, bukit fajar, cahaya, domba. Cek: naskah ke ustadz, lafal 'Rabbi hab lii minash shaalihiin' & 'Salaamun 'alaa ibraahiim', timing subtitle dari jeda suara (bukan Scribe), tanpa thumbnail kustom. Belum diunggah; menunggu tugas 'Upload YouTube harian' 15.01 WIB.",
   "tayang": {
    "long": "2026-11-14T16:30+07:00",
    "short1": "2026-11-15T16:30+07:00",
    "short2": "2026-11-16T16:30+07:00"
   },
-  "shorts": [],
+  "shorts": [
+   "Short-ibrahim-ismail-1-anak-sabar",
+   "Short-ibrahim-ismail-2-doa"
+  ],
   "youtube": {},
-  "instagram": {}
+  "instagram": {},
+  "rilis_dir": "rilis/2026-11-14"
  },
  {
   "paket": 6,
