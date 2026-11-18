@@ -12,7 +12,21 @@ Di video ini, Ghu berkisah tentang Nabi Musa 'alaihissalam dan laut yang terbela
 Yuk simak sampai akhir, ada doa Nabi Musa, kisah hari Asyura, hikmah kisah, dan tebak-tebakan seru!
 
 ⏱️ Isi video
-(timestamp diisi setelah VO selesai dibuat)
+00:00 Pembuka
+00:25 Raja yang sombong
+00:48 Nabi Musa diutus
+01:05 Doa Nabi Musa (QS. Thaha: 25–26)
+01:28 Mengajak Fir'aun
+01:58 Berangkat malam hari
+02:17 Dikejar Fir'aun
+02:32 Di tepi laut
+03:01 Pukullah laut itu
+03:18 Jalan yang kering
+03:37 Akhir orang yang sombong
+03:54 Hari Asyura
+04:21 Hikmah kisah
+04:56 Ayo tebak!
+05:20 Penutup
 
 🌱 Hikmah kisah
 1. Yakin bahwa Allah selalu bersama kita
@@ -44,4 +58,5 @@ kisah nabi, kisah nabi musa, nabi musa dan firaun, laut terbelah, nabi musa memb
 
 ## Catatan
 - Kategori: Pendidikan. Pengaturan audiens: **"Ya, dibuat untuk anak-anak"** (wajib untuk konten anak di YouTube).
-- Timestamp dihitung dari durasi VO setelah render.
+- Timestamp dihitung dari durasi VO; cek ulang di YouTube Studio bila perlu.
+- Subtitle/timing kata diperkirakan dari jeda suara (bukan Scribe).
