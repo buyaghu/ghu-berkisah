@@ -10,6 +10,7 @@ import {
 import { GhuWalker } from "../components/Ghu";
 import { Bubbles, Clouds, IslamicPattern } from "../components/nature";
 import { Ant, Ark, BigFish } from "../components/objects";
+import { SplitSeaArt } from "./MusaScenes";
 import { usePhraseFrame } from "../lib/voice";
 import { arabicFont, bodyFont, colors, titleFont } from "../theme";
 import { clamp, type SceneProps } from "./common";
@@ -227,6 +228,10 @@ export const IntroScene: React.FC<SceneProps> = ({ story }) => {
           ) : hook.art === "ram" ? (
             <div style={{ position: "absolute", left: 330, top: 470 }}>
               <Ram size={640} />
+            </div>
+          ) : hook.art === "sea" ? (
+            <div style={{ position: "absolute", left: 300, top: 420 }}>
+              <SplitSeaArt />
             </div>
           ) : hook.art === "fire" ? (
             <div style={{ position: "absolute", left: 290, top: 380 }}>

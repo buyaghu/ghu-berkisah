@@ -94,6 +94,22 @@ export const shorts: ShortDef[] = [
     introTopic: "doa Nabi Ibrahim 'alaihissalam, doa agar kita menjadi anak yang saleh",
     sceneIds: ["03-doa", "04-kabar"],
   },
+  {
+    id: "Short-musa-laut-1-laut-terbelah",
+    storyId: "musa-laut",
+    title: "Laut yang Terbelah",
+    art: "doa",
+    introTopic: "laut yang terbelah menjadi jalan, dari kisah Nabi Musa 'alaihissalam",
+    sceneIds: ["08-tepi", "09-tongkat", "10-jalan"],
+  },
+  {
+    id: "Short-musa-laut-2-doa",
+    storyId: "musa-laut",
+    title: "Doa Nabi Musa",
+    art: "doa",
+    introTopic: "doa Nabi Musa 'alaihissalam, doa saat kita akan belajar, atau menghadapi hal yang sulit",
+    sceneIds: ["03-diutus", "04-doa"],
+  },
 ];
 
 export const shortIntroId = (short: ShortDef) => `${short.id}-intro`;

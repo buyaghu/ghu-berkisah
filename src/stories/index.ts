@@ -4,6 +4,7 @@ import { yunus } from "./yunus";
 import { nuh } from "./nuh";
 import { ibrahimApi } from "./ibrahim-api";
 import { ibrahimIsmail } from "./ibrahim-ismail";
+import { musaLaut } from "./musa-laut";
 
 // Urutan = urutan di Remotion Studio. Tambahkan kisah berikutnya di sini.
-export const stories: Story[] = [sulaiman, yunus, nuh, ibrahimApi, ibrahimIsmail];
+export const stories: Story[] = [sulaiman, yunus, nuh, ibrahimApi, ibrahimIsmail, musaLaut];

@@ -179,14 +179,17 @@
   "paket": 6,
   "kisah": "musa-laut",
   "judul": "Nabi Musa & Laut yang Terbelah",
-  "status": "antri",
-  "catatan": "QS. Asy-Syu'ara: 52–68",
+  "status": "naskah_ada",
+  "catatan": "18 Nov 2026 12.05 WIB (Claude, sesi produksi terjadwal): BELUM DIRENDER, tidak ada video di rilis. Kredit ElevenLabs habis setelah 2 dari 17 klip VO (01-intro, 02-firaun tersimpan di repo privat public/voiceover/musa-laut/, belum ada manifest.json); sisa 68 kredit, perlu ±4.400 kredit lagi untuk 13 scene + 2 pembuka Shorts. Selesai: naskah src/stories/musa-laut.ts (15 scene, 558 kata; dalil QS. Thaha: 24–36, 43–47, 56, 77–78; Asy-Syu'ara: 52–67; Al-Qashash: 4; An-Nazi'at: 24; Al-Baqarah: 50; HR. Bukhari 2004 & Muslim 1130 tentang Asyura), adegan src/scenes/MusaScenes.tsx, 2 Shorts di src/shorts.ts, naskah/musa-laut-youtube.md & -shorts.md. Tayang 18 Nov 16.30 TIDAK terjadi; jadwal tayang perlu digeser setelah Kakak mengisi kredit ElevenLabs dan sesi produksi dijalankan ulang (VO: scene 03-diutus s.d. 15-penutup + Short-musa-laut-1/2-intro).",
   "tayang": {
    "long": "2026-11-18T16:30+07:00",
    "short1": "2026-11-19T16:30+07:00",
    "short2": "2026-11-20T16:30+07:00"
   },
-  "shorts": [],
+  "shorts": [
+   "Short-musa-laut-1-laut-terbelah",
+   "Short-musa-laut-2-doa"
+  ],
   "youtube": {},
   "instagram": {}
  },

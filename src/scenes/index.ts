@@ -24,6 +24,7 @@ import { ShoreScene } from "./ShoreScene";
 import { ArkBuildScene, FloodScene, JudiScene } from "./ArkScenes";
 import { CityEmptyScene, FireBuildScene, FireScene, IdolsCloseScene, IdolsScene, SkyEarthScene } from "./IbrahimScenes";
 import { CallLightScene, DawnHillsScene, DesertScene, FootprintsScene, NightDreamScene, RamScene, TentScene } from "./IsmailScenes";
+import { DustArmyScene, EgyptScene, NightRoadScene, SeaCalmScene, SeaCloseScene, SeaPathScene, SeaShoreScene, SeaStrikeScene } from "./MusaScenes";
 import { StormScene } from "./StormScene";
 import { SwallowScene } from "./SwallowScene";
 
@@ -75,6 +76,17 @@ export const visuals: Record<VisualKey, VisualConfig> = {
   dawnHills: { component: DawnHillsScene, avatar: true, captionsLeft: 330 },
   callLight: { component: CallLightScene, avatar: true, captionsLeft: 330 },
   ram: { component: RamScene, avatar: true, captionsLeft: 330 },
+  egypt: { component: EgyptScene, avatar: true, captionsLeft: 330 },
+  egyptDark: { component: EgyptScene, avatar: true, captionsLeft: 330 },
+  nightRoad: { component: NightRoadScene, avatar: true, captionsLeft: 330 },
+  dustArmy: { component: DustArmyScene, avatar: true, captionsLeft: 330 },
+  seaShore: { component: SeaShoreScene, avatar: true, captionsLeft: 330 },
+  seaStrike: { component: SeaStrikeScene, avatar: true, captionsLeft: 330 },
+  seaSplit: { component: SeaStrikeScene, avatar: true, captionsLeft: 330 },
+  seaPath: { component: SeaPathScene, avatar: true, captionsLeft: 330 },
+  seaClose: { component: SeaCloseScene, avatar: true, captionsLeft: 330 },
+  seaCalm: { component: SeaCalmScene, avatar: true, captionsLeft: 330 },
+  farShore: { component: SeaCalmScene, avatar: true, captionsLeft: 330 },
   doa: { component: DoaScene, avatar: false, captionsLeft: null },
   shore: { component: ShoreScene, avatar: true, captionsLeft: 330 },
   return: { component: ReturnScene, avatar: true, captionsLeft: 330 },
