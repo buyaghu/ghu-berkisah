@@ -201,16 +201,20 @@
   "paket": 7,
   "kisah": "musa-khidir",
   "judul": "Nabi Musa & Nabi Khidir",
-  "status": "antri",
-  "catatan": "QS. Al-Kahfi: 60–82, HR. Bukhari & Muslim",
+  "status": "siap_rilis",
+  "catatan": "Diproduksi 21 Nov 2026 (Claude, sesi terjadwal). Long 07:45 + 2 Shorts (01:24, 01:16) di repo privat rilis/2026-11-21/ (long.mp4 54 MB, sha256 di sha256.txt, pecahan di parts/). Tayang otomatis tanpa approval. Sumber: QS. Al-Kahfi: 60–82, HR. Bukhari no. 122/3401/4725 & Muslim no. 2380, doa QS. Thaha: 114. Cek: naskah ke ustadz (terutama adegan anak QS. 74 & 80–81, dinyatakan sebagai perintah Allah + penjelasan ulama tidak boleh ditiru), lafal 'Satajidunii insyaa Allahu shaabiraa' & 'Rabbi zidnii ilmaa', timing subtitle perkiraan (bukan Scribe). Riwayat sumber dasar: QS. Al-Kahfi: 60–82, HR. Bukhari & Muslim",
   "tayang": {
    "long": "2026-11-21T16:30+07:00",
    "short1": "2026-11-22T16:30+07:00",
    "short2": "2026-11-23T16:30+07:00"
   },
-  "shorts": [],
+  "shorts": [
+   "Short-musa-khidir-1-ikan",
+   "Short-musa-khidir-2-doa"
+  ],
   "youtube": {},
-  "instagram": {}
+  "instagram": {},
+  "rilis_dir": "rilis/2026-11-21"
  },
  {
   "paket": 8,
