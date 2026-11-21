@@ -42,6 +42,7 @@
     "render:ibrahim-api": "remotion render Kisah-ibrahim-api out/kisah-nabi-ibrahim-api.mp4",
     "render:ibrahim-ismail": "remotion render Kisah-ibrahim-ismail out/kisah-nabi-ibrahim-ismail.mp4",
     "render:musa-laut": "remotion render Kisah-musa-laut out/kisah-nabi-musa-laut.mp4",
+    "render:musa-khidir": "remotion render Kisah-musa-khidir out/kisah-nabi-musa-khidir.mp4",
     "vo:ambil": "bash scripts/ambil-vo.sh"
   },
   "allowScripts": {

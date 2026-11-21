@@ -1,3 +1,4 @@
+import { FishBasketArt } from "./KhidirScenes";
 import React from "react";
 import {
   AbsoluteFill,
@@ -232,6 +233,10 @@ export const IntroScene: React.FC<SceneProps> = ({ story }) => {
           ) : hook.art === "sea" ? (
             <div style={{ position: "absolute", left: 300, top: 420 }}>
               <SplitSeaArt />
+            </div>
+          ) : hook.art === "basket" ? (
+            <div style={{ position: "absolute", left: 330, top: 430 }}>
+              <FishBasketArt />
             </div>
           ) : hook.art === "fire" ? (
             <div style={{ position: "absolute", left: 290, top: 380 }}>

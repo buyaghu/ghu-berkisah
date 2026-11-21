@@ -25,6 +25,7 @@ import { ArkBuildScene, FloodScene, JudiScene } from "./ArkScenes";
 import { CityEmptyScene, FireBuildScene, FireScene, IdolsCloseScene, IdolsScene, SkyEarthScene } from "./IbrahimScenes";
 import { CallLightScene, DawnHillsScene, DesertScene, FootprintsScene, NightDreamScene, RamScene, TentScene } from "./IsmailScenes";
 import { DustArmyScene, EgyptScene, NightRoadScene, SeaCalmScene, SeaCloseScene, SeaPathScene, SeaShoreScene, SeaStrikeScene } from "./MusaScenes";
+import { BoatScene, FishBasketScene, FishJumpScene, HomeLightScene, KingBoatsScene, MeadowScene, TwoSeasScene, VillageScene, WallScene } from "./KhidirScenes";
 import { StormScene } from "./StormScene";
 import { SwallowScene } from "./SwallowScene";
 
@@ -87,6 +88,19 @@ export const visuals: Record<VisualKey, VisualConfig> = {
   seaClose: { component: SeaCloseScene, avatar: true, captionsLeft: 330 },
   seaCalm: { component: SeaCalmScene, avatar: true, captionsLeft: 330 },
   farShore: { component: SeaCalmScene, avatar: true, captionsLeft: 330 },
+  twoSeas: { component: TwoSeasScene, avatar: true, captionsLeft: 330 },
+  fishBasket: { component: FishBasketScene, avatar: true, captionsLeft: 330 },
+  fishJump: { component: FishJumpScene, avatar: true, captionsLeft: 330 },
+  boat: { component: BoatScene, avatar: true, captionsLeft: 330 },
+  boatBird: { component: BoatScene, avatar: true, captionsLeft: 330 },
+  boatHole: { component: BoatScene, avatar: true, captionsLeft: 330 },
+  kingBoats: { component: KingBoatsScene, avatar: true, captionsLeft: 330 },
+  meadow: { component: MeadowScene, avatar: true, captionsLeft: 330 },
+  homeLight: { component: HomeLightScene, avatar: true, captionsLeft: 330 },
+  village: { component: VillageScene, avatar: true, captionsLeft: 330 },
+  wallLean: { component: WallScene, avatar: true, captionsLeft: 330 },
+  wallFixed: { component: WallScene, avatar: true, captionsLeft: 330 },
+  wallTreasure: { component: WallScene, avatar: true, captionsLeft: 330 },
   doa: { component: DoaScene, avatar: false, captionsLeft: null },
   shore: { component: ShoreScene, avatar: true, captionsLeft: 330 },
   return: { component: ReturnScene, avatar: true, captionsLeft: 330 },
