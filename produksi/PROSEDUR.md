@@ -12,7 +12,7 @@ Tugas butuh konektor **Composio** dan **ElevenLabs** di pengaturan tugasnya.
 | --- | --- | --- |
 | Sabtu & Rabu ±11.53 | **Produksi** | Paket berikutnya: render long + 2 Shorts, simpan di `rilis/<tanggal-long>/` repo privat, status `siap_rilis`. **Tidak mengunggah.** |
 | Setiap hari 15.01 | **Upload YouTube** | Untuk video yang jatuh tempo hari itu: unggah *private* + `publishAt` 16.30 WIB (tayang otomatis) |
-| 16.30 | **Reels Instagram** | Untuk Shorts yang jatuh tempo: posting Reels @buyaaghu (akun Composio `instagram_chiral-havage`) |
+| 16.30 | **Reels Instagram** | Untuk Shorts yang jatuh tempo: posting Reels @buyaaghu (akun Composio `instagram_feeler-oftly`) |
 
 Status: `antri` → `naskah_ada` → `siap_rilis` → `tayang_long` → `tayang_short1` → `selesai`.
 Status `perlu_cek` = **jangan diunggah otomatis** (ada keraguan dalil/isi); tunggu keputusan Kakak.
@@ -46,6 +46,11 @@ Akun:
 - YouTube: channel **Ghu Berkisah** di Composio (`youtube`); Instagram: **@buyaaghu** di Composio (`instagram`).
   ID akun Composio ada di `produksi/akun.md` (repo privat). Selalu pilih akun secara eksplisit dan pastikan
   nama channel/akun benar sebelum upload.
+  - YouTube Ghu Berkisah = `youtube_repic-eking` (@ghuberkisah). **Bukan akun default** (default = channel lain),
+    jadi selalu isi `account`. Jangan pakai `proxy_execute` di workbench untuk YouTube karena tidak bisa memilih akun.
+  - Instagram @buyaaghu = `instagram_feeler-oftly` (per 23 Nov 2026). Akun lama `instagram_chiral-havage` dan
+    `instagram_facade-arhar` sudah tidak ada. Jika akun tidak ditemukan, cari akun yang username-nya `buyaaghu`
+    lewat `COMPOSIO_MANAGE_CONNECTIONS` (list), lalu perbarui prosedur ini.
 - ElevenLabs: suara **Ghu** `ucmsMSAaGjMUJ5LRZJIt`, model `eleven_v4`.
 
 ## 1. Sesi Produksi (Sabtu & Rabu ±11.53)
@@ -84,8 +89,11 @@ Akun:
    dari `youtube-meta.json`), set `publishAt` 16.30 WIB, lalu "dibuat untuk anak":
    `proxy_execute("PUT", "/videos", "youtube", query_params={"part": "status"}, body={"id": ..., "status": {"privacyStatus": "private", "publishAt": "<ISO>", "selfDeclaredMadeForKids": true, "embeddable": true, "publicStatsViewable": true, "license": "youtube"}})`.
    Simpan videoId di `antrian.json`; status → `tayang_long` / `tayang_short1` / `selesai`.
-4. **Reels Instagram (16.30)** untuk Shorts: akun Composio `instagram_chiral-havage` (cek username `buyaaghu` dengan
-   INSTAGRAM_GET_USER_INFO, kalau bukan, berhenti). Cek 5 media terakhir agar tidak posting ganda, unggah
+   Catatan: sejak 11 Nov, PUT `publishAt`/`selfDeclaredMadeForKids` sering ditolak (403), sehingga video tetap
+   *private*. Jika begitu, catat di `antrian.json` dan minta Kakak mengatur "dibuat untuk anak" + publikasi di YouTube Studio.
+4. **Reels Instagram (16.30)** untuk Shorts: akun Composio `instagram_feeler-oftly` (cek username `buyaaghu` dengan
+   INSTAGRAM_GET_USER_INFO, kalau bukan, berhenti). Reels tidak bergantung pada YouTube: tetap posting walau upload
+   YouTube gagal/tertunda, dan posting juga Shorts yang terlewat (tanggal sudah lewat, `instagram` masih kosong). Cek 5 media terakhir agar tidak posting ganda, unggah
    `short-1.mp4`/`short-2.mp4` (`INSTAGRAM_POST_IG_USER_MEDIA`, `REELS`, `share_to_feed: true`, `thumb_offset: 2000`,
    caption dari `naskah/<kisah>-shorts.md`) lalu `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH`. Simpan permalink.
 5. Laporan singkat ke Kakak, atau kendala yang terjadi.
