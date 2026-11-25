@@ -261,16 +261,20 @@
   "paket": 8,
   "kisah": "yusuf",
   "judul": "Nabi Yusuf & Mimpi yang Indah",
-  "status": "antri",
-  "catatan": "QS. Yusuf",
+  "status": "siap_rilis",
+  "catatan": "STATUS TERBARU: 25 Nov 2026 12.35 WIB (Claude, sesi produksi terjadwal): siap_rilis; long 08:44 + Short1 01:58 + Short2 01:42 di repo privat rilis/2026-11-25/ (long 61 MB, pecahan 20 MB di parts/, sha256 di sha256.txt, youtube-meta.json ada). Belum diunggah; menunggu tugas 'Upload YouTube harian' 15.01 WIB. Riwayat: QS. Yusuf: 4–101. Naskah src/stories/yusuf.ts (15 scene, 882 kata), 7 adegan baru (src/scenes/YusufScenes.tsx: langit bintang, sumur, kafilah unta, penjara, mimpi sapi & bulir, gudang gandum, baju bercahaya), tanpa figur nabi/manusia. Sumber hanya Al-Qur'an; dua penjelasan ulama tafsir disebut terang (sebelas bintang = saudara, matahari & bulan = ayah-ibu; tujuh sapi/bulir = tujuh tahun, takwil Nabi Yusuf sendiri QS. 47–49). Peristiwa rumah pembesar Mesir hanya disebut umum tanpa rincian. VO ElevenLabs eleven_v4 suara Ghu, 17 klip ±7.325 kredit (flow i4H4OkEJTmGfU7iHsIMW). Cek: naskah ke ustadz, lafal 'Fashabrun jamiil' & 'Tawaffanii muslimaa wa alhiqnii bish shaalihiin', terjemah QS. Yusuf: 101 ('matikanlah aku dalam keadaan Islam') untuk anak, durasi 08:44 (di atas 5–8 menit), timing subtitle dari jeda suara (bukan Scribe), tanpa thumbnail kustom.",
   "tayang": {
    "long": "2026-11-25T16:30+07:00",
    "short1": "2026-11-26T16:30+07:00",
    "short2": "2026-11-27T16:30+07:00"
   },
-  "shorts": [],
+  "shorts": [
+   "Short-yusuf-1-mimpi",
+   "Short-yusuf-2-doa"
+  ],
   "youtube": {},
-  "instagram": {}
+  "instagram": {},
+  "rilis_dir": "rilis/2026-11-25"
  },
  {
   "paket": 9,
