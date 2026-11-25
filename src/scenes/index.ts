@@ -26,6 +26,15 @@ import { CityEmptyScene, FireBuildScene, FireScene, IdolsCloseScene, IdolsScene,
 import { CallLightScene, DawnHillsScene, DesertScene, FootprintsScene, NightDreamScene, RamScene, TentScene } from "./IsmailScenes";
 import { DustArmyScene, EgyptScene, NightRoadScene, SeaCalmScene, SeaCloseScene, SeaPathScene, SeaShoreScene, SeaStrikeScene } from "./MusaScenes";
 import { BoatScene, FishBasketScene, FishJumpScene, HomeLightScene, KingBoatsScene, MeadowScene, TwoSeasScene, VillageScene, WallScene } from "./KhidirScenes";
+import {
+  CaravanScene,
+  DreamCowsScene,
+  GranaryScene,
+  PrisonScene,
+  ShirtLightScene,
+  StarsDreamScene,
+  WellScene,
+} from "./YusufScenes";
 import { StormScene } from "./StormScene";
 import { SwallowScene } from "./SwallowScene";
 
@@ -101,6 +110,13 @@ export const visuals: Record<VisualKey, VisualConfig> = {
   wallLean: { component: WallScene, avatar: true, captionsLeft: 330 },
   wallFixed: { component: WallScene, avatar: true, captionsLeft: 330 },
   wallTreasure: { component: WallScene, avatar: true, captionsLeft: 330 },
+  starsDream: { component: StarsDreamScene, avatar: true, captionsLeft: 330 },
+  well: { component: WellScene, avatar: true, captionsLeft: 330 },
+  caravan: { component: CaravanScene, avatar: true, captionsLeft: 330 },
+  prison: { component: PrisonScene, avatar: true, captionsLeft: 330 },
+  dreamCows: { component: DreamCowsScene, avatar: true, captionsLeft: 330 },
+  granary: { component: GranaryScene, avatar: true, captionsLeft: 330 },
+  shirtLight: { component: ShirtLightScene, avatar: true, captionsLeft: 330 },
   doa: { component: DoaScene, avatar: false, captionsLeft: null },
   shore: { component: ShoreScene, avatar: true, captionsLeft: 330 },
   return: { component: ReturnScene, avatar: true, captionsLeft: 330 },

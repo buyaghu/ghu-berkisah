@@ -17,6 +17,7 @@ import { GhuFull } from "./components/Ghu";
 import { IslamicPattern } from "./components/nature";
 import { Ant, HikmahIconSvg } from "./components/objects";
 import { ShotSeries } from "./components/ShotSeries";
+import { StarsArt } from "./scenes/YusufScenes";
 import { SceneSfx } from "./Episode";
 import type { EpisodeData } from "./lib/metadata";
 import { usePhraseFrame, VoiceProvider, type SceneVoice } from "./lib/voice";
@@ -201,6 +202,10 @@ const ShortIntro: React.FC<{ story: Story; short: ShortDef; available: string[] 
               <Ant size={170} walk={frame + i * 4} carrying={i % 2 === 0} />
             </div>
           ))
+        ) : short.art === "stars" ? (
+          <div style={{ display: "flex", justifyContent: "center", scale: "0.78", transformOrigin: "50% 0%" }}>
+            <StarsArt />
+          </div>
         ) : (
           <div style={{ display: "flex", justifyContent: "center" }}>
             <div

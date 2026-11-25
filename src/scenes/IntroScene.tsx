@@ -17,6 +17,7 @@ import { arabicFont, bodyFont, colors, titleFont } from "../theme";
 import { clamp, type SceneProps } from "./common";
 import { BigFire } from "./IbrahimScenes";
 import { Ram } from "./IsmailScenes";
+import { StarsArt } from "./YusufScenes";
 
 // Pembuka. Bagian 1: Ghu di kiri, judul di kanan.
 // Bagian 2 (introHook): judul hilang, Ghu berjalan ke kanan, lalu ilustrasi & kartu muncul di kiri.
@@ -233,6 +234,10 @@ export const IntroScene: React.FC<SceneProps> = ({ story }) => {
           ) : hook.art === "sea" ? (
             <div style={{ position: "absolute", left: 300, top: 420 }}>
               <SplitSeaArt />
+            </div>
+          ) : hook.art === "stars" ? (
+            <div style={{ position: "absolute", left: 330, top: 420 }}>
+              <StarsArt />
             </div>
           ) : hook.art === "basket" ? (
             <div style={{ position: "absolute", left: 330, top: 430 }}>

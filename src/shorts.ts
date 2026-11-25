@@ -7,7 +7,7 @@ export type ShortDef = {
   storyId: string;
   title: string;
   // Ilustrasi di layar judul
-  art: "ants" | "doa";
+  art: "ants" | "doa" | "stars";
   // Melengkapi kalimat pembuka: "Kali ini, saya ingin berkisah tentang …"
   introTopic: string;
   sceneIds: string[];
@@ -125,6 +125,22 @@ export const shorts: ShortDef[] = [
     art: "doa",
     introTopic: "doa agar ilmu kita bertambah, dari kisah Nabi Musa 'alaihissalam yang semangat menuntut ilmu",
     sceneIds: ["07-perahu", "13-doa"],
+  },
+  {
+    id: "Short-yusuf-1-mimpi",
+    storyId: "yusuf",
+    title: "Mimpi Sebelas Bintang",
+    art: "stars",
+    introTopic: "mimpi Nabi Yusuf 'alaihissalam, sebelas bintang yang akhirnya menjadi nyata",
+    sceneIds: ["02-mimpi", "11-terwujud"],
+  },
+  {
+    id: "Short-yusuf-2-doa",
+    storyId: "yusuf",
+    title: "Memaafkan & Doa Nabi Yusuf",
+    art: "doa",
+    introTopic: "Nabi Yusuf 'alaihissalam yang memaafkan saudara-saudaranya, dan doa beliau di dalam Al-Qur'an",
+    sceneIds: ["10-maaf", "12-doa"],
   },
 ];
 
