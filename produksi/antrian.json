@@ -253,6 +253,13 @@
     "waktu_tayang": "2026-11-23T08:19:25+07:00",
     "akun_composio": "instagram_feeler-oftly",
     "catatan": "susulan (terlewat karena akun Composio lama hilang)"
+   },
+   "short2": {
+    "media_id": "17954417904055836",
+    "permalink": "https://www.instagram.com/reel/DgMyg-cJ69N/",
+    "waktu_tayang": "2026-11-26T16:32:55+07:00",
+    "akun_composio": "instagram_feeler-oftly",
+    "catatan": "susulan (terlewat 23 Nov)"
    }
   },
   "rilis_dir": "rilis/2026-11-21"
@@ -276,7 +283,14 @@
    "long": "I_yguPZWpbo",
    "short1": "tiZPEMJZBlA"
   },
-  "instagram": {},
+  "instagram": {
+   "short1": {
+    "media_id": "18110084684256834",
+    "permalink": "https://www.instagram.com/reel/DgMyhIuJNZA/",
+    "waktu_tayang": "2026-11-26T16:32:43+07:00",
+    "akun_composio": "instagram_feeler-oftly"
+   }
+  },
   "rilis_dir": "rilis/2026-11-25"
  },
  {
