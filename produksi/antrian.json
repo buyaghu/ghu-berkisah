@@ -232,8 +232,8 @@
   "paket": 7,
   "kisah": "musa-khidir",
   "judul": "Nabi Musa & Nabi Khidir",
-  "status": "tayang_long",
-  "catatan": "CATATAN 25 Nov 2026 (Claude): long GIGZzN9ZHXs terverifikasi PUBLIC & dibuat untuk anak. STATUS TERBARU: 21 Nov 2026 16.30 WIB (Claude): long GIGZzN9ZHXs (processed) masih PRIVATE dengan madeForKids=false; tidak dibuat Publik otomatis agar tidak tayang tanpa tanda 'dibuat untuk anak'. Menunggu Kakak di YouTube Studio: 'Ya, dibuat untuk anak-anak' lalu Publik. Riwayat: STATUS TERBARU: 21 Nov 2026 15.03 WIB (Claude, sesi terjadwal): long 'Kisah Nabi Musa dan Khidir | Belajar dengan Sabar | Ghu Berkisah' diunggah ke Ghu Berkisah (ID GIGZzN9ZHXs, sha256 cocok) sebagai PRIVATE, kategori 27, judul/deskripsi/tag dari youtube-meta.json, tanpa thumbnail kustom (tidak ada file). publishAt & 'dibuat untuk anak' tetap tidak bisa diset: proxy Composio memakai akun default eF-AI TV (youtube_zither-humph), YOUTUBE_UPDATE_VIDEO tidak punya field publishAt/madeForKids; API melaporkan madeForKids=false. Menunggu Kakak di YouTube Studio: 'Ya, dibuat untuk anak-anak' lalu Jadwalkan 16.30 WIB; sesi ini memeriksa lagi pukul 16.30 dan hanya membuat Publik bila madeForKids sudah true. Riwayat: Diproduksi 21 Nov 2026 (Claude, sesi terjadwal). Long 07:45 + 2 Shorts (01:24, 01:16) di repo privat rilis/2026-11-21/ (long.mp4 54 MB, sha256 di sha256.txt, pecahan di parts/). Tayang otomatis tanpa approval. Sumber: QS. Al-Kahfi: 60–82, HR. Bukhari no. 122/3401/4725 & Muslim no. 2380, doa QS. Thaha: 114. Cek: naskah ke ustadz (terutama adegan anak QS. 74 & 80–81, dinyatakan sebagai perintah Allah + penjelasan ulama tidak boleh ditiru), lafal 'Satajidunii insyaa Allahu shaabiraa' & 'Rabbi zidnii ilmaa', timing subtitle perkiraan (bukan Scribe). Riwayat sumber dasar: QS. Al-Kahfi: 60–82, HR. Bukhari & Muslim",
+  "status": "selesai",
+  "catatan": "STATUS TERBARU: 26 Nov 2026 17.09 WIB (Claude, atas permintaan Kakak): short1 'Ikan di Keranjang Masuk ke Laut!' (otU4nbczEEc) dan short2 'Doa Agar Ilmu Bertambah' (6yl4Ot4mVCk) diunggah susulan ke Ghu Berkisah sebagai PRIVATE, kategori 27, sha256 cocok, metadata dari youtube-meta.json. Menunggu Kakak di YouTube Studio: 'Ya, dibuat untuk anak-anak' lalu Publik. Reels short1 & short2 sudah tayang. Riwayat: CATATAN 25 Nov 2026 (Claude): long GIGZzN9ZHXs terverifikasi PUBLIC & dibuat untuk anak. STATUS TERBARU: 21 Nov 2026 16.30 WIB (Claude): long GIGZzN9ZHXs (processed) masih PRIVATE dengan madeForKids=false; tidak dibuat Publik otomatis agar tidak tayang tanpa tanda 'dibuat untuk anak'. Menunggu Kakak di YouTube Studio: 'Ya, dibuat untuk anak-anak' lalu Publik. Riwayat: STATUS TERBARU: 21 Nov 2026 15.03 WIB (Claude, sesi terjadwal): long 'Kisah Nabi Musa dan Khidir | Belajar dengan Sabar | Ghu Berkisah' diunggah ke Ghu Berkisah (ID GIGZzN9ZHXs, sha256 cocok) sebagai PRIVATE, kategori 27, judul/deskripsi/tag dari youtube-meta.json, tanpa thumbnail kustom (tidak ada file). publishAt & 'dibuat untuk anak' tetap tidak bisa diset: proxy Composio memakai akun default eF-AI TV (youtube_zither-humph), YOUTUBE_UPDATE_VIDEO tidak punya field publishAt/madeForKids; API melaporkan madeForKids=false. Menunggu Kakak di YouTube Studio: 'Ya, dibuat untuk anak-anak' lalu Jadwalkan 16.30 WIB; sesi ini memeriksa lagi pukul 16.30 dan hanya membuat Publik bila madeForKids sudah true. Riwayat: Diproduksi 21 Nov 2026 (Claude, sesi terjadwal). Long 07:45 + 2 Shorts (01:24, 01:16) di repo privat rilis/2026-11-21/ (long.mp4 54 MB, sha256 di sha256.txt, pecahan di parts/). Tayang otomatis tanpa approval. Sumber: QS. Al-Kahfi: 60–82, HR. Bukhari no. 122/3401/4725 & Muslim no. 2380, doa QS. Thaha: 114. Cek: naskah ke ustadz (terutama adegan anak QS. 74 & 80–81, dinyatakan sebagai perintah Allah + penjelasan ulama tidak boleh ditiru), lafal 'Satajidunii insyaa Allahu shaabiraa' & 'Rabbi zidnii ilmaa', timing subtitle perkiraan (bukan Scribe). Riwayat sumber dasar: QS. Al-Kahfi: 60–82, HR. Bukhari & Muslim",
   "tayang": {
    "long": "2026-11-21T16:30+07:00",
    "short1": "2026-11-22T16:30+07:00",
@@ -244,7 +244,9 @@
    "Short-musa-khidir-2-doa"
   ],
   "youtube": {
-   "long": "GIGZzN9ZHXs"
+   "long": "GIGZzN9ZHXs",
+   "short1": "otU4nbczEEc",
+   "short2": "6yl4Ot4mVCk"
   },
   "instagram": {
    "short1": {
