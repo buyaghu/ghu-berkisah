@@ -306,16 +306,20 @@
   "paket": 9,
   "kisah": "ayyub",
   "judul": "Nabi Ayyub yang Sangat Sabar",
-  "status": "antri",
-  "catatan": "QS. Al-Anbiya: 83–84, Shad: 41–44",
+  "status": "siap_rilis",
+  "catatan": "STATUS TERBARU: 28 Nov 2026 12.23 WIB (Claude, sesi produksi terjadwal): long 06:26 + 2 Shorts (01:27, 01:47) dirender & disimpan di repo privat rilis/2026-11-28/ (sha256.txt, youtube-meta.json). Belum diunggah; dikerjakan tugas 'Upload YouTube harian' 15.01. Sumber: QS. Al-Anbiya: 83–84, QS. Shad: 41–44, QS. An-Nisa: 163, QS. Al-An'am: 84, HR. Bukhari 5641/Muslim 2573, HR. Bukhari 279/3391. Cek: naskah ke ustadz, lafal doa 'Annii massaniyadh dhurru...', timing subtitle (perkiraan dari jeda suara). Riwayat: QS. Al-Anbiya: 83–84, Shad: 41–44",
   "tayang": {
    "long": "2026-11-28T16:30+07:00",
    "short1": "2026-11-29T16:30+07:00",
    "short2": "2026-11-30T16:30+07:00"
   },
-  "shorts": [],
+  "shorts": [
+   "Short-ayyub-1-air-sejuk",
+   "Short-ayyub-2-doa"
+  ],
   "youtube": {},
-  "instagram": {}
+  "instagram": {},
+  "rilis_dir": "rilis/2026-11-28"
  },
  {
   "paket": 10,

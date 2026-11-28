@@ -142,6 +142,22 @@ export const shorts: ShortDef[] = [
     introTopic: "Nabi Yusuf 'alaihissalam yang memaafkan saudara-saudaranya, dan doa beliau di dalam Al-Qur'an",
     sceneIds: ["10-maaf", "12-doa"],
   },
+  {
+    id: "Short-ayyub-1-air-sejuk",
+    storyId: "ayyub",
+    title: "Hentakkan Kakimu!",
+    art: "doa",
+    introTopic: "air sejuk yang memancar dari tanah, dari kisah Nabi Ayyub 'alaihissalam yang sangat sabar",
+    sceneIds: ["06-hentak", "07-sembuh"],
+  },
+  {
+    id: "Short-ayyub-2-doa",
+    storyId: "ayyub",
+    title: "Doa Nabi Ayyub",
+    art: "doa",
+    introTopic: "doa Nabi Ayyub 'alaihissalam, doa yang bisa kita baca saat sedang sakit",
+    sceneIds: ["04-sabar", "05-doa"],
+  },
 ];
 
 export const shortIntroId = (short: ShortDef) => `${short.id}-intro`;

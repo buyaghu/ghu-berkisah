@@ -35,6 +35,7 @@ import {
   StarsDreamScene,
   WellScene,
 } from "./YusufScenes";
+import { AyyubGardenScene, GoldLocustsScene, NightGardenScene, SpringScene } from "./AyyubScenes";
 import { StormScene } from "./StormScene";
 import { SwallowScene } from "./SwallowScene";
 
@@ -117,6 +118,13 @@ export const visuals: Record<VisualKey, VisualConfig> = {
   dreamCows: { component: DreamCowsScene, avatar: true, captionsLeft: 330 },
   granary: { component: GranaryScene, avatar: true, captionsLeft: 330 },
   shirtLight: { component: ShirtLightScene, avatar: true, captionsLeft: 330 },
+  cloudyGarden: { component: AyyubGardenScene, avatar: true, captionsLeft: 330 },
+  witheredGarden: { component: AyyubGardenScene, avatar: true, captionsLeft: 330 },
+  bloomGarden: { component: AyyubGardenScene, avatar: true, captionsLeft: 330 },
+  nightGarden: { component: NightGardenScene, avatar: true, captionsLeft: 330 },
+  springRock: { component: SpringScene, avatar: true, captionsLeft: 330 },
+  spring: { component: SpringScene, avatar: true, captionsLeft: 330 },
+  goldLocusts: { component: GoldLocustsScene, avatar: true, captionsLeft: 330 },
   doa: { component: DoaScene, avatar: false, captionsLeft: null },
   shore: { component: ShoreScene, avatar: true, captionsLeft: 330 },
   return: { component: ReturnScene, avatar: true, captionsLeft: 330 },

@@ -18,6 +18,7 @@ import { clamp, type SceneProps } from "./common";
 import { BigFire } from "./IbrahimScenes";
 import { Ram } from "./IsmailScenes";
 import { StarsArt } from "./YusufScenes";
+import { StompArt } from "./AyyubScenes";
 
 // Pembuka. Bagian 1: Ghu di kiri, judul di kanan.
 // Bagian 2 (introHook): judul hilang, Ghu berjalan ke kanan, lalu ilustrasi & kartu muncul di kiri.
@@ -238,6 +239,10 @@ export const IntroScene: React.FC<SceneProps> = ({ story }) => {
           ) : hook.art === "stars" ? (
             <div style={{ position: "absolute", left: 330, top: 420 }}>
               <StarsArt />
+            </div>
+          ) : hook.art === "spring" ? (
+            <div style={{ position: "absolute", left: 330, top: 420 }}>
+              <StompArt />
             </div>
           ) : hook.art === "basket" ? (
             <div style={{ position: "absolute", left: 330, top: 430 }}>

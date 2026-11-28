@@ -80,7 +80,7 @@ export type Story = {
   // lalu ilustrasi (`art`) dan kartu muncul di kiri
   introHook?: {
     phrase: string;
-    art: "ants" | "fish" | "ark" | "fire" | "ram" | "sea" | "basket" | "stars";
+    art: "ants" | "fish" | "ark" | "fire" | "ram" | "sea" | "basket" | "stars" | "spring";
     cardPhrase: string;
     cardTitle: string;
     cardArab?: string;
@@ -164,6 +164,13 @@ export type VisualKey =
   | "dreamCows"
   | "granary"
   | "shirtLight"
+  | "cloudyGarden"
+  | "witheredGarden"
+  | "bloomGarden"
+  | "nightGarden"
+  | "springRock"
+  | "spring"
+  | "goldLocusts"
   | "hikmah"
   | "quiz"
   | "outro";
